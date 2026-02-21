@@ -1,0 +1,12 @@
+:root {
+  --cor-primary: #321D59;
+  --cor-secundary: #62339C;
+  --cor-terciary: #8D369F;
+}
+
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+}
