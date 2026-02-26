@@ -1,32 +1,148 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>hansen.ai</title>
-    <link rel="shortcut icon" type="image/x-icon" href="./img/logo.png"/>
+    <link rel="shortcut icon" type="image/x-icon" href="./img/logo.png" />
 
     <link rel="stylesheet" href="./styles/global.css" />
-    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./styles/style.css" />
   </head>
 
   <body>
     <!--========== HEADER ==========-->
-    <header class="header-container container">      
-        <img src="./img/logo.png" alt="Logo hansen.ai" class="logo">         
+    <header class="container navegacao">
+      <img src="./img/logo.png" alt="Logo hansen.ai" class="logo" />
 
-      <nav class="nav-container">
-        <ul class="menu-list">
-            <li><a href="#inicio">Início</a></li>
-            <li><a href="#sobre">Sobre</a></li>
-            <li><a href="#equipe">Equipe</a></li>
-            <li><a href="#producoes">Produções</a></li>
-            <li><a href="#contato">Contato</a></li>
-            <li><a href="#">English<img src="./img/icon/idioma.png"></a></li>
-            <li class="redrect"><a href="https://dotlabbrazil.com.br/">dotLAB Brazil</a></li>
+      <button class="menu-button" aria-label="Menu" aria-expanded="false">
+        <span></span>
+      </button>
+
+      <nav>
+        <ul class="navbar">
+          <li><a href="#inicio" data-i18n="menu_home">Início</a></li>
+          <li><a href="#sobre" data-i18n="menu_about">Sobre</a></li>
+          <li><a href="#equipe" data-i18n="menu_team">Equipe</a></li>
+          <li><a href="#producoes" data-i18n="menu_projects">Produções</a></li>
+          <li><a href="#contato" data-i18n="menu_contact">Contato</a></li>
+
+          <li class="language-dropdown">
+            <div class="selected-language" id="selectedLanguage">
+              Pt-Br
+              <span class="arrow"><img src="./img/icon/idioma.png"></span>
+            </div>
+
+            <ul class="language-options" id="languageOptions">
+              <li data-value="pt">Pt-Br</li>
+              <li data-value="en">English</li>
+            </ul>
+          </li>
+
+          <li class="link">
+            <a href="https://dotlabbrazil.com.br/">dotLAB Brazil</a>
+          </li>
         </ul>
       </nav>
     </header>
 
-    </body>
+    <!--========== main ==========-->
+    <main class="main-container container">
+      
+      <!--========== hero ==========-->
+      <section class="hero">
+        <div class="hero-text">
+          <h2 data-i18n="hero_subtitle">Projeto hansen.ai</h2>
+          <h1 data-i18n="hero_title">Inteligência Artificial para Hanseníase</h1>
+          <p>
+            O Hansen.ai é um projeto que utiliza inteligência artificial, ciência de dados e tecnologia em saúde para 
+            <b data-i18n="hero_text">apoiar o diagnóstico, o acompanhamento clínico e a vigilância epidemiológica da hanseníase no Brasil.</b>
+          </p>  
+
+          <div class="hero-button">
+            <button data-i18n="hero_button">Entre em contato</button>
+          </div>    
+        </div>
+
+        <div class="hero-image">
+          <img src="./img/image 4.png" alt="logo" />
+        </div>
+      </section>
+
+      <!--========== INFO/NUMBER ==========-->
+      <section class="info">
+
+        <div class="info-cards">
+
+            <div class="card">
+              <img src="./img/icon/engine.png">
+              
+              <div class="card-texto">
+                <h3 data-i18n="card_digital_1">Transformação Digital</h3>
+                <p data-i18n="card_digital_text_1">Digitalização de processos em saúde pública</p>
+              </div>
+            </div>
+
+            <div class="card">
+              <img src="./img/icon/grafo.png">
+
+              <div class="card-texto">
+                <h3 data-i18n="card_digital_2">Ciência de Dados</h3>
+                <p data-i18n="card_digital_text_2">Análise qualificada de dados do SUS</p>
+              </div>
+            </div>
+
+            <div class="card">
+              <img src="./img/icon/bot.png">
+
+              <div class="card-texto">
+                <h3 data-i18n="card_digital_3">Inteligência Artificial</h3>
+                <p data-i18n="card_digital_text_3">Modelo preditivo para suporte clínico</p>
+              </div>
+            </div>
+
+            <div class="card">
+              <img src="./img/icon/pilha.png">
+
+              <div class="card-texto">
+                <h3 data-i18n="card_digital_4">Visualização de Dados</h3>
+                <p data-i18n="card_digital_text_4">Painéis interativos para decisões estratégicas</p>
+              </div>
+            </div>
+        </div>
+      </section>
+
+      <section class="numeros">
+        <div class="numeros-grid">
+          <div class="numb">
+            <h2 data-target="783162">0</h2>
+            <p data-i18n="numb_1">Casos de Hanseníase</p>
+          </div>
+          <div class="numb">
+            <h2 data-target="445719">0</h2>
+            <p data-i18n="numb_2">Incapacidade não avaliada</p>
+          </div>
+          <div class="numb">
+            <h2 data-target="17340">0</h2>
+            <p data-i18n="numb_3">Avaliação inconsistente</p>
+          </div>
+          <div class="numb">
+            <h2 data-target="32103">0</h2>
+            <p data-i18n="numb_4">Piora na incapacidade</p>
+          </div>
+        </div>
+      </section>
+
+      <!--=========== etapas ===========-->
+      <section class="etapas"></section>
+    </main>
+
+    <footer class="footer-container container">
+      <span>© Copyright 2025 dotLAB Brazil</span>
+    </footer>
+
+    <script src="./js/index.js"></script>
+    <script src="./js/lenguage.js"></script>
+
+  </body>
 </html>

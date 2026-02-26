@@ -1,0 +1,285 @@
+:root {
+  --cor-primary: #321d59;
+  --cor-secundary: #62339c;
+  --cor-terciary: #8d369f;
+}
+
+/*============ HEADER ===========*/
+.navegacao {
+  width: 100%;
+  padding: 25px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffffff;
+  box-shadow: 0 4px 10px -5px rgba(0, 0, 0, 0.05);
+}
+
+.menu-button {
+  display: none;
+}
+
+.logo {
+  width: 160px;
+  height: auto;
+  margin: 0;
+}
+
+nav ul {
+  display: flex;
+  align-items: center;
+  list-style: none;
+  gap: 35px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: var(--cor-secundary);
+  font-size: 20px;
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: var(--cor-primary);
+}
+
+.link {
+  background-color: var(--cor-secundary);
+  padding: 10px 25px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: 0.3s;
+}
+
+.link a {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.link a:hover {
+ color: #777;
+}
+
+/* ===== Language Custom Dropdown ===== */
+
+.language-dropdown {
+  position: relative;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--cor-secundary);
+}
+
+.selected-language {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.arrow {
+  font-size: 14px;
+}
+
+.language-options {
+  position: absolute;
+  top: 35px;
+  left: 0;
+  background: var(--cor-secundary);
+  color: #ffffff;
+  list-style: none;
+  padding: 8px 0;
+  width: 100px;
+  border-radius: 4px;
+  box-shadow: 0 8px 25px rgba(0,0,0,0.8);
+  display: none;
+}
+
+.language-options li {
+  padding: 10px 15px;
+  transition: 0.2s;
+}
+
+.language-options li:hover {
+  color: #777; /* hover com letra cinza */
+}
+
+.language-options li.selected {
+  color: #999; /* linguagem selecionada fica cinza */
+}
+
+
+/* ===== HERO ===== */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 0;
+}
+
+.hero-text {
+  max-width: 600px;
+  margin-right: 200px;
+}
+
+.hero-text h1 {
+  font-size: 32px;
+  color: var(--cor-primary);
+  margin-bottom: 20px;
+}
+.hero-text h2 {
+  font-size: 20px;
+  color: var(--cor-terciary);
+}
+.hero-text p {
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.hero-button button{
+  background: linear-gradient(90deg, #62339C 0%, #3B205C 100%);
+  color: #ffffff;
+  width: 260px;
+  height: 59px;
+  font-size: 18px;
+  font-weight: 600;
+  top: 667px;
+  left: 140px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.hero-button button:hover {
+  color: #777; /* hover com letra cinza */
+}
+
+.hero-image img {
+  width: 400px;
+  height: auto;
+  top: 298px;
+  margin: 0;
+}
+
+/* ===== INFO/NUMBER ===== */
+.info {
+  padding: 80px 40px;
+  background-color: #ffffff;
+}
+
+.info-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* CARD */
+.card {
+  position: relative;
+  background-color: #fff;
+  border-radius: 16px;
+  padding: 40px 28px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  overflow: hidden;
+  cursor: pointer;
+}
+
+/* Efeito de elevação */
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 35px rgba(0, 0, 0, 0.12);
+}
+
+/* FAIXA ROXA (HOVER) */
+.card::before {
+  content: "";
+  position: absolute;
+  top: -60px;
+  left: 20%;
+  transform: translateX(-50%);
+  width: 45px;
+  height: 100px;
+  background-color: #8e369f83;
+  border-radius: 0 0 35px 35px;
+  opacity: 0;
+  transition: opacity 0.3s ease, top 0.3s ease;
+}
+
+/* Mostra a faixa no hover */
+.card:hover::before {
+  opacity: 1;
+  top: -20px;
+}
+
+/* ÍCONE */
+.card img {
+  width: 46px;
+  height: 46px;
+  margin-bottom: 24px;
+  z-index: 1;
+  position: relative;
+}
+
+/* TEXTO */
+.card-texto h3 {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--cor-primary);
+  margin-bottom: 10px;
+}
+
+.card-texto p {
+  font-size: 0.9rem;
+  color: #555;
+  line-height: 1.4;
+}
+
+/* ======= Numeros =========== */
+.numeros {
+  position: relative;
+  width: 100vw;
+  left: 50%;
+  transform: translateX(-50%);
+
+  padding: 40px 0;
+  margin-bottom: 10px;
+  background: linear-gradient(90deg, #6b3fa0 0%, #5a2d8a 50%, #2b123f 100%);
+}
+
+.numeros-grid {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 40px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+  align-items: center;
+}
+
+.numb {
+  text-align: center;
+}
+
+/* Número */
+.numb h2 {
+  font-size: 3.2rem;
+  font-weight: 800;
+  color: #ffffff;
+  margin-bottom: 10px;
+  letter-spacing: 1px;
+}
+
+/* Texto */
+.numb p {
+  font-size: 18px;
+  font-weight: 400;
+  color: #f1e9ff;
+  opacity: 0.95;
+}
+
