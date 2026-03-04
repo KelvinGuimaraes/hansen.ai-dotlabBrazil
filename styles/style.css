@@ -61,7 +61,7 @@ nav ul li a:hover {
 }
 
 .link a:hover {
- color: #777;
+  color: #777;
 }
 
 /* ===== Language Custom Dropdown ===== */
@@ -94,7 +94,7 @@ nav ul li a:hover {
   padding: 8px 0;
   width: 100px;
   border-radius: 4px;
-  box-shadow: 0 8px 25px rgba(0,0,0,0.8);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.8);
   display: none;
 }
 
@@ -110,7 +110,6 @@ nav ul li a:hover {
 .language-options li.selected {
   color: #999; /* linguagem selecionada fica cinza */
 }
-
 
 /* ===== HERO ===== */
 .hero {
@@ -140,8 +139,8 @@ nav ul li a:hover {
   margin-bottom: 20px;
 }
 
-.hero-button button{
-  background: linear-gradient(90deg, #62339C 0%, #3B205C 100%);
+.hero-button button {
+  background: linear-gradient(90deg, #62339c 0%, #3b205c 100%);
   color: #ffffff;
   width: 260px;
   height: 59px;
@@ -181,11 +180,13 @@ nav ul li a:hover {
 /* CARD */
 .card {
   position: relative;
-  background-color: #fff;
+  background: #f9f9f99f;
   border-radius: 16px;
   padding: 40px 28px;
-  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0px 4px 4px 0px #00000040;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
   overflow: hidden;
   cursor: pointer;
 }
@@ -208,7 +209,9 @@ nav ul li a:hover {
   background-color: #8e369f83;
   border-radius: 0 0 35px 35px;
   opacity: 0;
-  transition: opacity 0.3s ease, top 0.3s ease;
+  transition:
+    opacity 0.3s ease,
+    top 0.3s ease;
 }
 
 /* Mostra a faixa no hover */
@@ -283,3 +286,159 @@ nav ul li a:hover {
   opacity: 0.95;
 }
 
+/* ======= etapas =========== */
+.etapas-texto {
+  margin-top: 50px;
+}
+
+.etapas-texto h1 {
+  width: 860px;
+  height: 67px;
+  top: 1655px;
+  left: 140px;
+  font-size: 32px;
+  color: var(--cor-primary);
+}
+
+.etapas-texto p {
+  width: 1160px;
+  height: 156px;
+  top: 1722px;
+  left: 140px;
+  font-size: 20px;
+}
+
+.etapas-button {
+  margin-top: -40px;
+  margin-bottom: 50px;
+}
+
+.etapas-button button {
+  background: linear-gradient(90deg, #62339c 0%, #3b205c 100%);
+  color: #ffffff;
+  width: 260px;
+  height: 59px;
+  font-size: 18px;
+  font-weight: 600;
+  top: 667px;
+  left: 140px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.etapas-button button:hover {
+  color: #777; /* hover com letra cinza */
+}
+
+.etapas-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.eta-card {
+  width: 500px;
+  height: 400px;
+  border-radius: 12px;
+  padding: 40px 28px;
+  background: #f9f9f9;
+  box-shadow: 0px 4px 4px 0px #00000040;
+}
+
+.eta-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 35px rgba(0, 0, 0, 0.12);
+}
+
+.eta-card img {
+  width: 48;
+  height: 62;
+  top: 2035px;
+  left: 207px;
+  margin: 10px;
+}
+
+.eta-texto h3 {
+  width: 440px;
+  height: 69px;
+  top: 2122px;
+  left: 207px;
+  color: var(--cor-primary);
+  font-size: 20px;
+  font-weight: 700;
+  margin: 10px;
+}
+
+.eta-texto p {
+  width: 440;
+  height: 165;
+  top: 2215px;
+  left: 207px;
+  font-size: 20px;
+  font-weight: 400;
+  margin: 10px;
+}
+
+/*=========== PARCEIROS =============*/
+.parceiros {
+  padding: 80px 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.parceiros-texto {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.parceiros-texto h1 {
+  color: var(--cor-primary);
+  font-size: 32px;
+  font-weight: 700;
+  margin: 0;
+}
+
+/* CONTAINER QUE ESCONDE O EXCESSO */
+.parceiros_img {
+  width: 100%;
+  overflow: hidden;
+}
+
+/* LISTA DO CARROSSEL */
+.parceiros_img ul {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+
+  width: max-content; /* ESSENCIAL */
+  animation: scrollCarousel 10s linear infinite;
+}
+
+/* ITENS */
+.parceiros_img li {
+  flex-shrink: 0;
+}
+
+/* IMAGENS */
+.parceiros_img img {
+  height: auto;
+  object-fit: contain;
+}
+
+
+/* ANIMAÇÃO CORRIGIDA */
+@keyframes scrollCarousel {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}

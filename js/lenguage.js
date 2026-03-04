@@ -30,7 +30,30 @@ const translations = {
     numb_1: "Casos de Hanseníase",
     numb_2: "Incapacidade não avaliada",
     numb_3: "Avaliação inconsistente",
-    numb_4: "Piora na incapacidade"
+    numb_4: "Piora na incapacidade",
+
+    etapas_title: "O hansen.ai é dividido em quatro grandes etapas",
+    etapas_text:
+      "Uma abordagem estruturada em quatro grandes etapas que integram tecnologia, ciência de dados e saúde pública para apoiar o diagnóstico, o monitoramento clínico e a tomada de decisão no enfrentamento da hanseníase.",
+    etapas_button: "Saiba mais",
+
+    etapas_card_1: "Desenvolvimento de Aplicativos e Processos",
+    etapas_card_text_1:
+      "Criação do ANSd, plataforma para coleta e consulta de dados em campo. Integra o trabalho dos profissionais de saúde com o modelo de IA para apoio ao tratamento da hanseníase.",
+    
+    etapas_card_2: "Digitalização da ANS",
+    etapas_card_text_2:
+      "Transformação dos formulários de Avaliação Neurológica Simplificada (ANS) em dados digitais padronizados. Essa etapa garante a qualidade e uniformidade dos dados que alimentarão o sistema preditivo.",
+    
+    etapas_card_3: "Visualização de Dados das ANS e do SINAN",
+    etapas_card_text_3:
+      "Desenvolvimento de painéis interativos para análise de dados epidemiológicos. Permite identificar padrões, inconsistências e apoiar políticas públicas de forma clara e acessível.",
+    
+    etapas_card_4: "Desenvolvimento do modelo de IA hansen.Ai",
+    etapas_card_text_4:
+      "Criação de um modelo preditivo treinado com dados reais do SUS. Seu objetivo é antecipar a progressão da hanseníase e auxiliar decisões clínicas personalizadas.",
+    
+    parceiros_title: "Conheça nossos parceiros",
   },
 
   en: {
@@ -51,7 +74,7 @@ const translations = {
 
     card_digital_2: "Data Science",
     card_digital_text_2: "Qualified analysis of SUS data",
-    
+
     card_digital_3: "Artificial Intelligence",
     card_digital_text_3: "Predictive model for clinical support",
 
@@ -61,12 +84,35 @@ const translations = {
     numb_1: "Cases of Leprosy",
     numb_2: "Disability not assessed",
     numb_3: "Inconsistent assessment",
-    numb_4: "Worsening disability"
-  }
+    numb_4: "Worsening disability",
+
+    etapas_title: "hansen.ai is divided into four main stages",
+    etapas_text:
+      "A structured approach in four major steps that integrate technology, data science, and public health to support diagnosis, clinical monitoring, and decision-making in the fight against leprosy.",
+    etapas_button: "find out more",
+
+    etapas_card_1: "Application and Process Development",
+    etapas_card_text_1:
+      "Creation of ANSd, a platform for collecting and consulting field data. It integrates the work of healthcare professionals with an AI model to support the treatment of leprosy.",
+    
+    etapas_card_2: "Digitization of the ANS",
+    etapas_card_text_2:
+      "Transformation of Simplified Neurological Assessment (ANS) forms into standardized digital data. This step ensures the quality and uniformity of the data that will feed the predictive system.",
+    
+    etapas_card_3: "Visualization of ANS and SINAN Data",
+    etapas_card_text_3:
+      "Development of interactive dashboards for epidemiological data analysis. Enables the identification of patterns and inconsistencies, and supports public policies in a clear and accessible way.",
+    
+    etapas_card_4: "Development of the hansen.Ai AI model",
+    etapas_card_text_4:
+      "Creation of a predictive model trained with real data from the Brazilian Unified Health System (SUS). Its objective is to anticipate the progression of leprosy and assist in personalized clinical decisions.",
+    
+    parceiros_title: "Meet our partners",
+  },
 };
 
 function changeLanguage(lang) {
-  document.querySelectorAll("[data-i18n]").forEach(el => {
+  document.querySelectorAll("[data-i18n]").forEach((el) => {
     const key = el.getAttribute("data-i18n");
     if (translations[lang][key]) {
       el.innerHTML = translations[lang][key];
@@ -82,11 +128,10 @@ function changeLanguage(lang) {
 
 /* Dropdown */
 selected.addEventListener("click", () => {
-  options.style.display =
-    options.style.display === "block" ? "none" : "block";
+  options.style.display = options.style.display === "block" ? "none" : "block";
 });
 
-document.querySelectorAll(".language-options li").forEach(option => {
+document.querySelectorAll(".language-options li").forEach((option) => {
   option.addEventListener("click", function () {
     const lang = this.dataset.value;
     changeLanguage(lang);
@@ -95,7 +140,7 @@ document.querySelectorAll(".language-options li").forEach(option => {
 });
 
 /* Fecha ao clicar fora */
-document.addEventListener("click", e => {
+document.addEventListener("click", (e) => {
   if (!document.querySelector(".language-dropdown").contains(e.target)) {
     options.style.display = "none";
   }
