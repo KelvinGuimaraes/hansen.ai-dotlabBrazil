@@ -345,6 +345,9 @@ nav ul li a:hover {
   padding: 40px 28px;
   background: #f9f9f9;
   box-shadow: 0px 4px 4px 0px #00000040;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
 .eta-card:hover {
@@ -432,7 +435,6 @@ nav ul li a:hover {
   object-fit: contain;
 }
 
-
 /* ANIMAÇÃO CORRIGIDA */
 @keyframes scrollCarousel {
   from {
@@ -441,4 +443,58 @@ nav ul li a:hover {
   to {
     transform: translateX(-50%);
   }
+}
+
+/*=========== Produções =============*/
+
+.producoes {
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.producoes-texto {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.producoes-texto h1 {
+  color: var(--cor-primary);
+  font-size: 32px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.producoes-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.prod-card {
+  width: 500px;
+  height: 100px;
+  border-radius: 12px;
+  padding: 40px 28px;
+  background: #f9f9f9;
+  box-shadow: 0px 4px 4px 0px #00000040;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.prod-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 35px rgba(0, 0, 0, 0.12);
+}
+
+.prod-card h3 {
+  width: 470;
+  height: 101;
+  top: 3733px;
+  left: 185px;
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--cor-primary);
 }

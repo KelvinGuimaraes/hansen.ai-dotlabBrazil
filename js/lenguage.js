@@ -54,6 +54,20 @@ const translations = {
       "Criação de um modelo preditivo treinado com dados reais do SUS. Seu objetivo é antecipar a progressão da hanseníase e auxiliar decisões clínicas personalizadas.",
     
     parceiros_title: "Conheça nossos parceiros",
+
+    producoes_title: "Produções Científicas",
+    prod_card_1: 
+      "AUTOMATIC INFORMATION EXTRACTION FROM NEUROLOGICAL ASSESSMENT RECORDS FOR LEPROSY CASES USING AI",
+    prod_card_2:
+      "COMPARING YOLD AND DETECTRON2 MODELS FOR AUTOMATIC EXTRACTING PATIENTS INFORMATION FROM LEPROSY ASSESSMENT FORM",
+    prod_card_3:
+      "HANSEN.APP: SIMPLIFIED NEUROLOGICAL ASSESSMENT FORM APPLICATION FOR DATA COLLECTION TO SUPPORT HANSEN’S DISEASE TREATMENT",
+    prod_card_4:
+      "HEALTH GUARDIAN - A INTELIGÊNCIA ARTIFICIAL A SERVIÇO DO TRATAMENTO DAS DOENÇAS TROPICAIS NEGLIGENCIADAS",
+    prod_card_5:
+      "ON THE USAGE OF ARTIFICIAL INTELLIGENCE IN LEPROSY CARE: A SYSTEMATIC LITERATURE REVIEW",
+    prod_card_6:
+      "PAINEL INTERATIVO PARA MONITORAMENTO DE CONTATOS DE PACIENTES COM HANSENÍASE NO BRASIL: UMA FERRAMENTA ALINHADA À ESTRATÉGIA GLOBAL 2021-2030.",
   },
 
   en: {
@@ -108,6 +122,20 @@ const translations = {
       "Creation of a predictive model trained with real data from the Brazilian Unified Health System (SUS). Its objective is to anticipate the progression of leprosy and assist in personalized clinical decisions.",
     
     parceiros_title: "Meet our partners",
+
+    producoes_title: "Scientific Productions",
+    prod_card_1: 
+      "AUTOMATIC INFORMATION EXTRACTION FROM NEUROLOGICAL ASSESSMENT RECORDS FOR LEPROSY CASES USING AI",
+    prod_card_2:
+      "COMPARING YOLD AND DETECTRON2 MODELS FOR AUTOMATIC EXTRACTING PATIENTS INFORMATION FROM LEPROSY ASSESSMENT FORM",
+    prod_card_3:
+      "HANSEN.APP: SIMPLIFIED NEUROLOGICAL ASSESSMENT FORM APPLICATION FOR DATA COLLECTION TO SUPPORT HANSEN’S DISEASE TREATMENT",
+    prod_card_4:
+      "HEALTH GUARDIAN - ARTIFICIAL INTELLIGENCE IN THE SERVICE OF TREATING NEGLECTED TROPICAL DISEASES.",
+    prod_card_5:
+      "ON THE USAGE OF ARTIFICIAL INTELLIGENCE IN LEPROSY CARE: A SYSTEMATIC LITERATURE REVIEW",
+    prod_card_6:
+      "INTERACTIVE PANEL FOR MONITORING CONTACTS OF LEPROSY PATIENTS IN BRAZIL: A TOOL ALIGNED WITH THE 2021-2030 GLOBAL STRATEGY.",
   },
 };
 
