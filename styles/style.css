@@ -570,3 +570,80 @@ nav ul li a:hover {
 .contato-button button:hover {
   color: #777; /* hover com letra cinza */
 }
+
+/*=========== FOOTER =============*/
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 80px 40px 40px 40px;
+}
+
+/* área principal do footer */
+.colunas {
+  display: grid;
+  grid-template-columns: 300px 1fr 1fr 1fr;
+  gap: 80px;
+  align-items: start;
+}
+
+/* logo */
+.logo-footer {
+  width: 220px;
+}
+
+/* titulos */
+.footer-container h3 {
+  color: var(--cor-primary);
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+/* listas */
+.footer-container ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-container li {
+  margin-bottom: 8px;
+}
+
+/* links */
+.footer-container a {
+  text-decoration: none;
+  font-size: 16px;
+  transition: 0.3s;
+  color: #474747;
+}
+
+.footer-container a:hover {
+  color: var(--cor-secundary);
+}
+
+/* texto contato */
+.contact p {
+  font-size: 15px;
+  line-height: 1.5;
+  margin-bottom: 15px;
+  max-width: 260px;
+}
+
+/* instagram */
+.contact ul li {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.contact ul img {
+  width: 20px;
+}
+
+/* copyright */
+.footer-container span {
+  color: #666;
+  font-size: 14px;
+}

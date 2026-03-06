@@ -8,6 +8,8 @@ const translations = {
     menu_team: "Equipe",
     menu_projects: "Produções",
     menu_contact: "Contato",
+    menu_tecnica: "Técnica",
+    menu_relatrorio: "Relatório",
 
     hero_subtitle: "Projeto hansen.ai",
     hero_title: "Inteligência Artificial para Hanseníase",
@@ -72,6 +74,12 @@ const translations = {
     contato_title: "Se inscreva na nossa Newsletter para receber notícias",
     contato_button: "Inscreva-se",
     namePlaceholder: "Nome",
+
+    Navegacao: "Navegação",
+    Links: "Links importantes",
+    Contato: "Contato",
+    contact: 
+      "O projeto hansen.ai é um projeto de pesquisa desenvolvido pelo @dotlabbrazil e financiado pelo @cnpq_oficial para pensar como a IA pode ajudar no tratamento da hanseníase.",
   },
 
   en: {
@@ -80,6 +88,8 @@ const translations = {
     menu_team: "Team",
     menu_projects: "Projects",
     menu_contact: "Contact",
+    menu_tecnica: "Technical",
+    menu_relatrorio: "Report",
 
     hero_subtitle: "hansen.ai Project",
     hero_title: "Artificial Intelligence for Leprosy",
@@ -144,6 +154,12 @@ const translations = {
     contato_title: "Subscribe to our Newsletter to receive updates",
     contato_button: "Sign up",
     namePlaceholder: "Name",
+
+    Navegacao: "Navigation",
+    Links: "Important Links",
+    Contato: "Contact",
+    contact: 
+      "The hansen.ai project is a research project developed by @dotlabbrazil and funded by @cnpq_oficial to explore how AI can aid in the treatment of leprosy.",
   },
 };
 
