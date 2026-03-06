@@ -68,6 +68,10 @@ const translations = {
       "ON THE USAGE OF ARTIFICIAL INTELLIGENCE IN LEPROSY CARE: A SYSTEMATIC LITERATURE REVIEW",
     prod_card_6:
       "PAINEL INTERATIVO PARA MONITORAMENTO DE CONTATOS DE PACIENTES COM HANSENÍASE NO BRASIL: UMA FERRAMENTA ALINHADA À ESTRATÉGIA GLOBAL 2021-2030.",
+    
+    contato_title: "Se inscreva na nossa Newsletter para receber notícias",
+    contato_button: "Inscreva-se",
+    namePlaceholder: "Nome",
   },
 
   en: {
@@ -136,6 +140,10 @@ const translations = {
       "ON THE USAGE OF ARTIFICIAL INTELLIGENCE IN LEPROSY CARE: A SYSTEMATIC LITERATURE REVIEW",
     prod_card_6:
       "INTERACTIVE PANEL FOR MONITORING CONTACTS OF LEPROSY PATIENTS IN BRAZIL: A TOOL ALIGNED WITH THE 2021-2030 GLOBAL STRATEGY.",
+    
+    contato_title: "Subscribe to our Newsletter to receive updates",
+    contato_button: "Sign up",
+    namePlaceholder: "Name",
   },
 };
 
@@ -144,6 +152,13 @@ function changeLanguage(lang) {
     const key = el.getAttribute("data-i18n");
     if (translations[lang][key]) {
       el.innerHTML = translations[lang][key];
+    }
+  });
+
+  document.querySelectorAll("[data-i18n-placeholder]").forEach((el) => {
+    const key = el.getAttribute("data-i18n-placeholder");
+    if (translations[lang][key]) {
+      el.placeholder = translations[lang][key];
     }
   });
 
