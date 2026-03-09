@@ -1,4 +1,4 @@
-// MENU RESPONSIVO
+/* MENU RESPONSIVO
 document.addEventListener("DOMContentLoaded", function () {
   const menuButton = document.querySelector(".menu-button");
   const navbar = document.querySelector(".navbar");
@@ -26,6 +26,42 @@ document.addEventListener("DOMContentLoaded", function () {
     if (!isClickInside && navbar.classList.contains("active")) {
       menuButton.setAttribute("aria-expanded", "false");
       navbar.classList.remove("active");
+    }
+  });
+}); */
+
+/* ===== Dropdown de Produções ===== */
+document.addEventListener("DOMContentLoaded", () => {
+  const prodSelected = document.getElementById("selectedProductions");
+  const prodOptions = document.getElementById("producOptions");
+
+  if (!prodSelected || !prodOptions) return;
+
+  // Mostrar/ocultar opções ao clicar
+  prodSelected.addEventListener("click", () => {
+    prodOptions.style.display =
+      prodOptions.style.display === "block" ? "none" : "block";
+  });
+
+  // Ao escolher uma opção, redireciona para a página de produções com a âncora apropriada
+  prodOptions.querySelectorAll("li").forEach((option) => {
+    option.addEventListener("click", function () {
+      const value = this.dataset.value;
+      // atualizar texto do dropdown para refletir a escolha
+      prodSelected.textContent = this.textContent;
+      // você pode ajustar o caminho conforme a estrutura do seu site
+      window.location.href = `pages/producoes.html#${value}`;
+      prodOptions.style.display = "none";
+    });
+  });
+
+  // Fechar o dropdown ao clicar fora
+  document.addEventListener("click", function (event) {
+    const isClickInside =
+      prodOptions.contains(event.target) || prodSelected.contains(event.target);
+
+    if (!isClickInside && prodOptions.style.display === "block") {
+      prodOptions.style.display = "none";
     }
   });
 });

@@ -88,13 +88,13 @@ nav ul li a:hover {
   position: absolute;
   top: 35px;
   left: 0;
-  background: var(--cor-secundary);
-  color: #ffffff;
+  background: #f9f9f99f;
+  color: var(--cor-secundary);
   list-style: none;
   padding: 8px 0;
   width: 100px;
   border-radius: 4px;
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.8);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.395);
   display: none;
 }
 
@@ -104,11 +104,60 @@ nav ul li a:hover {
 }
 
 .language-options li:hover {
-  color: #777; /* hover com letra cinza */
+  color: var(--cor-primary); /* hover com letra cinza */
 }
 
 .language-options li.selected {
-  color: #999; /* linguagem selecionada fica cinza */
+  color: var(--cor-primary); /* linguagem selecionada fica cinza */
+}
+
+/* ===== productions Custom Dropdown ===== */
+.produc-dropdown {
+  position: relative;
+  cursor: pointer;
+  font-weight: 600;
+  font-size: 18px;
+  color: var(--cor-secundary);
+}
+
+.selected-produc {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.arrow-produ {
+  font-size: 14px;
+  display: flex;
+  align-items: end;
+  justify-content: end;
+}
+
+.produc-options {
+  position: absolute;
+  top: 35px;
+  left: 0;
+  background: #f9f9f99f;
+  color: var(--cor-secundary);
+  list-style: none;
+  padding: 8px 0;
+  width: 130px;
+  border-radius: 4px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.395);
+  display: none;
+}
+
+.produc-options li {
+  padding: 10px 15px;
+  transition: 0.2s;
+}
+
+.produc-options li:hover {
+  color: var(--cor-primary); /* hover com letra cinza */
+}
+
+.produc-options li.selected {
+  color: var(--cor-primary); /* linguagem selecionada fica cinza */
 }
 
 /* ===== HERO ===== */
@@ -503,7 +552,6 @@ nav ul li a:hover {
   padding: 80px 40px;
   display: flex;
   flex-direction: column;
-  
 }
 
 .contato-texto {
@@ -536,7 +584,7 @@ nav ul li a:hover {
   border-radius: 8px;
   border-width: 1px;
 
-  background: #F9F9F9;
+  background: #f9f9f9;
   border: 1px solid var(--cor-primary);
   box-shadow: 0px 4px 4px 0px #00000040;
 }

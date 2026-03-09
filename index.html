@@ -24,7 +24,21 @@
           <li><a href="#inicio" data-i18n="menu_home">Início</a></li>
           <li><a href="#sobre" data-i18n="menu_about">Sobre</a></li>
           <li><a href="#equipe" data-i18n="menu_team">Equipe</a></li>
-          <li><a href="#producoes" data-i18n="menu_projects">Produções</a></li>
+          
+          <li class="produc-dropdown">
+            <div class="selected-produc" id="selectedProductions" >
+              <p data-i18n="menu_projects" >Produções</p>
+              <span class="arrow-produ"><img src="./img/icon/idioma.png"></span>
+            </div>
+            
+
+            <ul class="produc-options" id="producOptions">
+              <li data-value="cientifica" data-i18n="menu_ciencia">Científicas</li>
+              <li data-value="tecnica" data-i18n="menu_tecnica">Técnicas</li>
+              <li data-value="relatorio" data-i18n="menu_relatrorio">Relatórios</li>
+            </ul>
+          </li>
+
           <li><a href="#contato" data-i18n="menu_contact">Contato</a></li>
 
           <li class="language-dropdown">

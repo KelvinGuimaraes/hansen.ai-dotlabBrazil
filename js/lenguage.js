@@ -10,6 +10,7 @@ const translations = {
     menu_contact: "Contato",
     menu_tecnica: "Técnica",
     menu_relatrorio: "Relatório",
+    menu_ciencia: "Científicas",
 
     hero_subtitle: "Projeto hansen.ai",
     hero_title: "Inteligência Artificial para Hanseníase",
@@ -90,6 +91,7 @@ const translations = {
     menu_contact: "Contact",
     menu_tecnica: "Technical",
     menu_relatrorio: "Report",
+    menu_ciencia: "Scientific",
 
     hero_subtitle: "hansen.ai Project",
     hero_title: "Artificial Intelligence for Leprosy",
