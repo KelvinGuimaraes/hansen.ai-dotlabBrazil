@@ -1,6 +1,9 @@
 const selected = document.getElementById("selectedLanguage");
 const options = document.getElementById("languageOptions");
 
+// Determina o caminho base dependendo da página
+const basePath = window.location.pathname.includes('/pages/') ? '../' : './';
+
 const translations = {
   pt: {
     menu_home: "Início",
@@ -81,6 +84,47 @@ const translations = {
     Contato: "Contato",
     contact: 
       "O projeto hansen.ai é um projeto de pesquisa desenvolvido pelo @dotlabbrazil e financiado pelo @cnpq_oficial para pensar como a IA pode ajudar no tratamento da hanseníase.",
+
+    //////// PAGINA SOBRE ////////
+    hero_title1: "Sobre o hansen.ai",
+    hero_text1: 
+      "O hansen.ai é um projeto de pesquisa desenvolvido pelo dotLAB Brazil, com financiamento do CNPq, voltado ao desenvolvimento de soluções baseadas em Ciência de Dados e Inteligência Artificial para apoiar profissionais de saúde no cuidado de pessoas afetadas pela hanseníase.",
+    
+    objetivo_title: "Objetivo do Projeto",
+    objetivo_text: 
+      "Apoiar a tomada de decisão clínica e fortalecer a vigilância epidemiológica, contribuindo para o cuidado contínuo e a redução de sequelas associadas à hanseníase.",
+    
+    dev_title: "Principais Desenvolvimentos",
+    dev_text:
+      "Soluções tecnológicas desenvolvidas para apoiar profissionais de saúde no diagnóstico, monitoramento e acompanhamento da hanseníase.",
+    card_dev_1: "Plataforma Digital de Apoio ao Profissional de Saúde",
+    card_dev_text_1: 
+      "Ferramenta que integra dados clínicos e utiliza modelos preditivos para auxiliar na identificação e acompanhamento da progressão dos sintomas da hanseníase.",
+    card_dev_2: "Sistema Integrado para Avaliação Neurológica Simplificada (ANS)",
+    card_dev_text_2: 
+      "Solução digital que padroniza e registra avaliações neurológicas, integrando essas informações aos bancos de dados públicos.",
+    
+    proce_title: "Processo de Desenvolvimento",
+    proce_text: 
+      "Etapas que estruturam a criação e evolução das soluções tecnológicas do projeto.",
+    slide_titele: "Coleta de dados",
+    slide_text1: "Coleta",
+    slide_text2: "Pré-processamento",
+    slide_text3: "Análise",
+    slide_text4: "Geração de insights",
+    slide_text5: "inteligência artificial",
+    slide_text6: "machine learning",
+    slide_text7: "modelos de classificação",
+    slide_text8: "construção da plataforma",
+    slide_text9: "liberação de API",
+    slide_text10: "plataformas interativas",
+    slide_text11: "testes da plataforma",
+    slide_text12: "integração com sistemas",
+
+    dotlab_titele: "Sobre o dotLAB Brazil",
+    dotlab_text:
+      "O dotLAB Brazil é um grupo de pesquisa cadastrado no CNPq que coordena colaborações entre universidades brasileiras e instituições internacionais, aplicando inteligência artificial e ciência de dados para resolver problemas em saúde pública.",
+    dotlab_button: "Conheça o dotLAB Brazil",
   },
 
   en: {
@@ -162,6 +206,47 @@ const translations = {
     Contato: "Contact",
     contact: 
       "The hansen.ai project is a research project developed by @dotlabbrazil and funded by @cnpq_oficial to explore how AI can aid in the treatment of leprosy.",
+    
+    //////// PAGINA SOBRE ////////
+    hero_title1: "About hansen.ai",
+    hero_text1: 
+      "hansen.ai is a research project developed by dotLAB Brazil, with funding from CNPq, focused on developing solutions based on Data Science and Artificial Intelligence to support healthcare professionals in the care of people affected by leprosy.",
+    
+    objetivo_title: "Project Objective",
+    objetivo_text: 
+      "Support clinical decision-making and strengthen epidemiological surveillance, contributing to continuous care and the reduction of sequelae associated with leprosy.",
+    
+    dev_title: "Key developments",
+    dev_text:
+      "Technological solutions developed to support healthcare professionals in the diagnosis, monitoring, and follow-up of leprosy.",
+    card_dev_1: "Digital Platform to Support Healthcare Professionals",
+    card_dev_text_1: 
+      "A tool that integrates clinical data and uses predictive models to help identify and monitor the progression of leprosy symptoms.",
+    card_dev_2: "Integrated System for Simplified Neurological Assessment (ANS)",
+    card_dev_text_2: 
+      "A digital solution that standardizes and records neurological assessments, integrating this information with public databases.",
+    
+    proce_title: "Development Process",
+    proce_text: 
+      "Steps that structure the creation and evolution of the project's technological solutions.",
+    slide_titele: "Data Collection",
+    slide_text1: "Collection",
+    slide_text2: "Preprocessing",
+    slide_text3: "Analysis",
+    slide_text4: "Insight Generation",
+    slide_text5: "artificial intelligence",
+    slide_text6: "machine learning",
+    slide_text7: "classification models",
+    slide_text8: "platform construction",
+    slide_text9: "API release",
+    slide_text10: "interactive platforms",
+    slide_text11: "platform testing",
+    slide_text12: "integration with systems",
+
+    dotlab_titele: "About dotLAB Brazil",
+    dotlab_text:
+      "dotLAB Brazil is a research group registered with CNPq that coordinates collaborations between Brazilian universities and international institutions, applying artificial intelligence and data science to solve problems in public health.",
+    dotlab_button: "Get to know dotLAB Brazil",
   },
 };
 
@@ -184,7 +269,7 @@ function changeLanguage(lang) {
 
   selected.innerHTML =
     (lang === "pt" ? "Pt-Br" : "English") +
-    ' <span class="arrow"><img src="./img/icon/idioma.png"></span>';
+    ' <span class="arrow"><img src="' + basePath + 'img/icon/idioma.png"></span>';
 }
 
 /* Dropdown */

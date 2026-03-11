@@ -28,6 +28,16 @@ dt {
   list-style: none;
 }
 
+h1 {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+p {
+  font-size: 20px;
+  font-weight: 500;
+}
+
 a {
   text-decoration: none;
 }
