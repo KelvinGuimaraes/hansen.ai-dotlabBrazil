@@ -1,5 +1,7 @@
+@import url(../styles/resp/home.css);
+
 :root {
-  --cor-primary: #321d59;
+  --cor-primary: #3e246e;
   --cor-secundary: #62339c;
   --cor-terciary: #8d369f;
 }
@@ -41,7 +43,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-  color: var(--cor-primary);
+  color: var(--cor-terciary);
 }
 
 .link {

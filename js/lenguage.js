@@ -125,6 +125,37 @@ const translations = {
     dotlab_text:
       "O dotLAB Brazil é um grupo de pesquisa cadastrado no CNPq que coordena colaborações entre universidades brasileiras e instituições internacionais, aplicando inteligência artificial e ciência de dados para resolver problemas em saúde pública.",
     dotlab_button: "Conheça o dotLAB Brazil",
+
+    //////// PAGINA EQUIPE ////////
+    equipe_titele: "Conheça a equipe do hansen.ai",
+    equi_descri_1: "Professora livre-docente da UPE e coordenadora do projeto",
+    equi_descri_2: "Professora Da Universidade De Pernambuco",
+    equi_descri_4: "Professor efetivo do Instituto Federal de Pernambuco",
+    equi_descri_5:
+      "Professor da Universidade de Pernambuco, Pesquisador do dotLab Brazil",
+    equi_descri_6: "Professor da Universidade Federal da Paraíba",
+    equi_descri_7:
+      "Professor da Universidade de Pernambuco, Pesquisador do dotlab Brazil e Doutorando da UPE",
+    equi_descri_8:
+      "Pesquisador do dotlab Brazil, Professor do Centro Universitário Unifavip Wyden",
+    equi_descri_9:
+      "Professor da Universidade Anhembi Morumbi (SP), Divulgador Científico do Projeto hansen.ai",
+    equi_descri_10: "Pesquisador do dotlab Brazil",
+    equi_descri_11:
+      "Mestranda em Engenharia da Computação (PPGEC) e Pesquisadora DotLab Brazil",
+    equi_descri_12:
+      "Pesquisador do dotLAB Brazil - Bolsista de Iniciação ao Extensionismo do CNPq",
+    equi_descri_13:
+      "Mestrando em Engenharia da Computação (PPGEC) e Pesquisador do dotLAB Brazil",
+    equi_descri_14: 
+      "Graduando em Sistema de Informação e estudante de Iniciação Científica",
+    equi_descri_15: "Graduando em Sistema de Informação",
+    equi_descri_16: "Pós-doutorando especialista no desenvolvimento de hardware",
+    equi_descri_17: "Pesquisadora DotLab Brazil",
+    equi_descri_18: "Graduando em Enfermagem - FENSG/UPE",
+    equi_descri_19: "Graduanda em Sistemas de Informação",
+    equi_descri_20:
+      "Coordenadora de Pesquisas na Fundação NHR Brasil, Pesquisadora convidada do dotLAB Brazil",
   },
 
   en: {
@@ -247,6 +278,37 @@ const translations = {
     dotlab_text:
       "dotLAB Brazil is a research group registered with CNPq that coordinates collaborations between Brazilian universities and international institutions, applying artificial intelligence and data science to solve problems in public health.",
     dotlab_button: "Get to know dotLAB Brazil",
+    
+    //////// PAGINA EQUIPE ////////
+    equipe_titele: "Meet the hansen.ai team",
+    equi_descri_1: "Associate professor at UPE and coordinator of the project.",
+    equi_descri_2: "Professor at the University of Pernambuco",
+    equi_descri_4: "Full-time professor at the Federal Institute of Pernambuco",
+    equi_descri_5:
+      "Professor at the University of Pernambuco, Researcher at dotLab Brazil",
+    equi_descri_6: "Professor at the Federal University of Paraíba",
+    equi_descri_7:
+      "Professor at the University of Pernambuco, Researcher at dotLab Brazil and PhD candidate at UPE",
+    equi_descri_8:
+      "Researcher at dotlab Brazil, Professor at Unifavip Wyden University Center",
+    equi_descri_9:
+      "Professor at Anhembi Morumbi University (São Paulo), Science Communicator for the hansen.ai Project.",
+    equi_descri_10: "Researcher at dotlab Brazil",
+    equi_descri_11:
+      "Master's student in Computer Engineering (PPGEC) and Researcher at DotLab Brazil",
+    equi_descri_12:
+      "Researcher at dotlab Brazil - CNPq Extension Initiation Scholarship Recipient",
+    equi_descri_13:
+      "Master's student in Computer Engineering (PPGEC) and Researcher at dotlab Brazil",
+    equi_descri_14: 
+      "Undergraduate student in Information Systems and undergraduate research student.",
+    equi_descri_15: "Undergraduate student in Information Systems",
+    equi_descri_16: "Postdoctoral researcher specializing in hardware development.",
+    equi_descri_17: "Researcher at DotLab Brazil",
+    equi_descri_18: "Undergraduate student in Nursing - FENSG/UPE",
+    equi_descri_19: "Undergraduate student in Information Systems",
+    equi_descri_20:
+      "Research Coordinator at the NHR Brazil Foundation, Visiting Researcher at dotLAB Brazil",
   },
 };
 
