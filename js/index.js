@@ -34,6 +34,8 @@ document.addEventListener("DOMContentLoaded", function () {
 document.addEventListener("DOMContentLoaded", () => {
   const prodSelected = document.getElementById("selectedProductions");
   const prodOptions = document.getElementById("producOptions");
+  // Determina o caminho para a página de produções dependendo da página atual
+  const producoesPath = window.location.pathname.includes('/pages/') ? 'producoes.html' : 'pages/producoes.html';
 
   if (!prodSelected || !prodOptions) return;
 
@@ -47,10 +49,8 @@ document.addEventListener("DOMContentLoaded", () => {
   prodOptions.querySelectorAll("li").forEach((option) => {
     option.addEventListener("click", function () {
       const value = this.dataset.value;
-      // atualizar texto do dropdown para refletir a escolha
-      prodSelected.textContent = this.textContent;
-      // você pode ajustar o caminho conforme a estrutura do seu site
-      window.location.href = `pages/producoes.html#${value}`;
+      // navega corretamente de qualquer página (raiz ou /pages/)
+      window.location.href = `${producoesPath}#${value}`;
       prodOptions.style.display = "none";
     });
   });
