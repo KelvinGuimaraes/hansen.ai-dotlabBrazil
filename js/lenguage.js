@@ -73,8 +73,10 @@ const translations = {
     prod_card_5:
       "ON THE USAGE OF ARTIFICIAL INTELLIGENCE IN LEPROSY CARE: A SYSTEMATIC LITERATURE REVIEW",
     prod_card_6:
-      "PAINEL INTERATIVO PARA MONITORAMENTO DE CONTATOS DE PACIENTES COM HANSENÍASE NO BRASIL: UMA FERRAMENTA ALINHADA À ESTRATÉGIA GLOBAL 2021-2030.",
-    
+      "PAINEL INTERATIVO PARA MONITORAMENTO DE CONTATOS DE PACIENTES COM HANSENÍASE NO BRASIL: UMA FERRAMENTA ALINHADA À ESTRATÉGIA GLOBAL 2021-2030",
+    prod_card_7:
+      "PAINEL INTERATIVO PARA MONITORAMENTO E ANÁLISE DA EVOLUÇÃO DO GRAU DE INCAPACIDADE DECORRENTE DA HANSENÍASE NO BRASIL: UMA FERRAMENTA ALINHADA À ESTRATÉGIA GLOBAL 2021-2030",
+
     contato_title: "Se inscreva na nossa Newsletter para receber notícias",
     contato_button: "Inscreva-se",
     namePlaceholder: "Nome",
@@ -226,8 +228,10 @@ const translations = {
     prod_card_5:
       "ON THE USAGE OF ARTIFICIAL INTELLIGENCE IN LEPROSY CARE: A SYSTEMATIC LITERATURE REVIEW",
     prod_card_6:
-      "INTERACTIVE PANEL FOR MONITORING CONTACTS OF LEPROSY PATIENTS IN BRAZIL: A TOOL ALIGNED WITH THE 2021-2030 GLOBAL STRATEGY.",
-    
+      "INTERACTIVE PANEL FOR MONITORING CONTACTS OF LEPROSY PATIENTS IN BRAZIL: A TOOL ALIGNED WITH THE 2021-2030 GLOBAL STRATEGY",
+    prod_card_7:
+      "Interactive Panel for Monitoring and Analyzing the Evolution of Disability Due to Leprosy in Brazil: A Tool Aligned with the 2021-2030 Global Strategy",
+
     contato_title: "Subscribe to our Newsletter to receive updates",
     contato_button: "Sign up",
     namePlaceholder: "Name",

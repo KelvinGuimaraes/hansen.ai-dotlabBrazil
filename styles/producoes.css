@@ -1,0 +1,7 @@
+@import url(../styles/style.css);
+@import url(../styles/resp/production.css);
+
+.produ {
+    margin-top: 120px;
+    margin-bottom: 100px;
+}
