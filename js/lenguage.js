@@ -90,7 +90,7 @@ const translations = {
     //////// PAGINA SOBRE ////////
     hero_title1: "Sobre o hansen.ai",
     hero_text1: 
-      "O hansen.ai é um projeto de pesquisa desenvolvido pelo dotLAB Brazil, com financiamento do CNPq, voltado ao desenvolvimento de soluções baseadas em Ciência de Dados e Inteligência Artificial para apoiar profissionais de saúde no cuidado de pessoas afetadas pela hanseníase.",
+      "O hansen.ai é um projeto de pesquisa desenvolvido pelo dotLAB Brazil, com financiamento do CNPq, voltado ao desenvolvimento de soluções baseadas em <b>Ciência de Dados e Inteligência Artificial para apoiar profissionais de saúde no cuidado de pessoas afetadas pela hanseníase.</b>",
     
     objetivo_title: "Objetivo do Projeto",
     objetivo_text: 
@@ -245,7 +245,7 @@ const translations = {
     //////// PAGINA SOBRE ////////
     hero_title1: "About hansen.ai",
     hero_text1: 
-      "hansen.ai is a research project developed by dotLAB Brazil, with funding from CNPq, focused on developing solutions based on Data Science and Artificial Intelligence to support healthcare professionals in the care of people affected by leprosy.",
+      "hansen.ai is a research project developed by dotLAB Brazil, with funding from CNPq, focused on developing solutions based on <b>Data Science and Artificial Intelligence to support healthcare professionals in the care of people affected by leprosy.</b>",
     
     objetivo_title: "Project Objective",
     objetivo_text: 
