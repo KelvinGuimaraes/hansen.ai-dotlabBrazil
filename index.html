@@ -23,19 +23,26 @@
         <ul class="navbar">
           <li><a href="#inicio" data-i18n="menu_home">Início</a></li>
           <li><a href="./pages/sobre.html" data-i18n="menu_about">Sobre</a></li>
-          <li><a href="./pages/equipe.html" data-i18n="menu_team">Equipe</a></li>
-          
+          <li>
+            <a href="./pages/equipe.html" data-i18n="menu_team">Equipe</a>
+          </li>
+
           <li class="produc-dropdown">
-            <div class="selected-produc" id="selectedProductions" >
-              <p data-i18n="menu_projects" >Produções</p>
-              <span class="arrow-produ"><img src="./img/icon/idioma.png"></span>
+            <div class="selected-produc" id="selectedProductions">
+              <p data-i18n="menu_projects">Produções</p>
+              <span class="arrow-produ"
+                ><img src="./img/icon/idioma.png"
+              /></span>
             </div>
-            
 
             <ul class="produc-options" id="producOptions">
-              <li data-value="cientifica" data-i18n="menu_ciencia">Científicas</li>
+              <li data-value="cientifica" data-i18n="menu_ciencia">
+                Científicas
+              </li>
               <li data-value="tecnica" data-i18n="menu_tecnica">Técnicas</li>
-              <li data-value="relatorio" data-i18n="menu_relatrorio">Relatórios</li>
+              <li data-value="relatorio" data-i18n="menu_relatrorio">
+                Relatórios
+              </li>
             </ul>
           </li>
 
@@ -44,7 +51,7 @@
           <li class="language-dropdown">
             <div class="selected-language" id="selectedLanguage">
               Pt-Br
-              <span class="arrow"><img src="./img/icon/idioma.png"></span>
+              <span class="arrow"><img src="./img/icon/idioma.png" /></span>
             </div>
 
             <ul class="language-options" id="languageOptions">
@@ -62,20 +69,27 @@
 
     <!--========== main ==========-->
     <main class="main-container container">
-      
       <!--========== hero ==========-->
       <section class="hero" id="inicio">
         <div class="hero-text">
           <h2 data-i18n="hero_subtitle">Projeto hansen.ai</h2>
-          <h1 data-i18n="hero_title">Inteligência Artificial para Hanseníase</h1>
-          <p>
-            O Hansen.ai é um projeto que utiliza inteligência artificial, ciência de dados e tecnologia em saúde para 
-            <b data-i18n="hero_text">apoiar o diagnóstico, o acompanhamento clínico e a vigilância epidemiológica da hanseníase no Brasil.</b>
-          </p>  
+          <h1 data-i18n="hero_title">
+            Inteligência Artificial para Hanseníase
+          </h1>
+          <p data-i18n="hero_text">
+            O Hansen.ai é um projeto que utiliza inteligência artificial,
+            ciência de dados e tecnologia em saúde para
+            <b
+              >apoiar o diagnóstico, o acompanhamento clínico e a vigilância
+              epidemiológica da hanseníase no Brasil.</b
+            >
+          </p>
 
           <div class="hero-button">
-            <button data-i18n="hero_button">Entre em contato</button>
-          </div>    
+            <a href="https://www.instagram.com/dot.hansenai/">
+              <button data-i18n="hero_button">Entre em contato</button>
+            </a>
+          </div>
         </div>
 
         <div class="hero-image">
@@ -85,44 +99,50 @@
 
       <!--========== INFO/NUMBER ==========-->
       <section class="info" id="info">
-
         <div class="info-cards">
+          <div class="card">
+            <img src="./img/icon/engine.png" />
 
-            <div class="card">
-              <img src="./img/icon/engine.png">
-              
-              <div class="card-texto">
-                <h3 data-i18n="card_digital_1">Transformação Digital</h3>
-                <p data-i18n="card_digital_text_1">Digitalização de processos em saúde pública</p>
-              </div>
+            <div class="card-texto">
+              <h3 data-i18n="card_digital_1">Transformação Digital</h3>
+              <p data-i18n="card_digital_text_1">
+                Digitalização de processos em saúde pública
+              </p>
             </div>
+          </div>
 
-            <div class="card">
-              <img src="./img/icon/grafo.png">
+          <div class="card">
+            <img src="./img/icon/grafo.png" />
 
-              <div class="card-texto">
-                <h3 data-i18n="card_digital_2">Ciência de Dados</h3>
-                <p data-i18n="card_digital_text_2">Análise qualificada de dados do SUS</p>
-              </div>
+            <div class="card-texto">
+              <h3 data-i18n="card_digital_2">Ciência de Dados</h3>
+              <p data-i18n="card_digital_text_2">
+                Análise qualificada de dados do SUS
+              </p>
             </div>
+          </div>
 
-            <div class="card">
-              <img src="./img/icon/bot.png">
+          <div class="card">
+            <img src="./img/icon/bot.png" />
 
-              <div class="card-texto">
-                <h3 data-i18n="card_digital_3">Inteligência Artificial</h3>
-                <p data-i18n="card_digital_text_3">Modelo preditivo para suporte clínico</p>
-              </div>
+            <div class="card-texto">
+              <h3 data-i18n="card_digital_3">Inteligência Artificial</h3>
+              <p data-i18n="card_digital_text_3">
+                Modelo preditivo para suporte clínico
+              </p>
             </div>
+          </div>
 
-            <div class="card">
-              <img src="./img/icon/pilha.png">
+          <div class="card">
+            <img src="./img/icon/pilha.png" />
 
-              <div class="card-texto">
-                <h3 data-i18n="card_digital_4">Visualização de Dados</h3>
-                <p data-i18n="card_digital_text_4">Painéis interativos para decisões estratégicas</p>
-              </div>
+            <div class="card-texto">
+              <h3 data-i18n="card_digital_4">Visualização de Dados</h3>
+              <p data-i18n="card_digital_text_4">
+                Painéis interativos para decisões estratégicas
+              </p>
             </div>
+          </div>
         </div>
       </section>
 
@@ -149,188 +169,246 @@
 
       <!--=========== etapas ===========-->
       <section class="etapas" id="etapas">
-        
         <div class="etapas-texto">
-          
-          <h1 data-i18n="etapas_title">O hansen.ai é dividido em quatro grandes etapas</h1>
-          
+          <h1 data-i18n="etapas_title">
+            O hansen.ai é dividido em quatro grandes etapas
+          </h1>
+
           <p data-i18n="etapas_text">
-            Uma abordagem estruturada em quatro grandes etapas que integram 
-            <b>tecnologia, ciência de dados e saúde pública para apoiar o diagnóstico, 
-              o monitoramento clínico e a tomada de decisão no enfrentamento da hanseníase.
+            Uma abordagem estruturada em quatro grandes etapas que integram
+            <b
+              >tecnologia, ciência de dados e saúde pública para apoiar o
+              diagnóstico, o monitoramento clínico e a tomada de decisão no
+              enfrentamento da hanseníase.
             </b>
           </p>
-          
+
           <div class="etapas-button">
             <a href="./pages/sobre.html">
               <button data-i18n="etapas_button">Saiba mais</button>
             </a>
           </div>
-
         </div>
 
         <div class="etapas-cards">
-
           <div class="eta-card">
-            <img src="./img/icon/phone.png">
+            <img src="./img/icon/phone.png" />
 
             <div class="eta-texto">
-              <h3 data-i18n="etapas_card_1">Desenvolvimento de Aplicativos e Processos</h3>
+              <h3 data-i18n="etapas_card_1">
+                Desenvolvimento de Aplicativos e Processos
+              </h3>
               <p data-i18n="etapas_card_text_1">
-                Criação do ANSd, plataforma para coleta e consulta de dados em campo. 
-                Integra o trabalho dos profissionais de saúde com o modelo de IA para apoio ao tratamento da hanseníase.
-              </p>  
+                Criação do ANSd, plataforma para coleta e consulta de dados em
+                campo. Integra o trabalho dos profissionais de saúde com o
+                modelo de IA para apoio ao tratamento da hanseníase.
+              </p>
             </div>
           </div>
 
           <div class="eta-card">
-            <img src="./img/icon/nuvem.png">
+            <img src="./img/icon/nuvem.png" />
 
             <div class="eta-texto">
               <h3 data-i18n="etapas_card_2">Digitalização da ANS</h3>
               <p data-i18n="etapas_card_text_2">
-                Transformação dos formulários de Avaliação Neurológica Simplificada (ANS) em dados digitais padronizados. 
-                Essa etapa garante a qualidade e uniformidade dos dados que alimentarão o sistema preditivo.
+                Transformação dos formulários de Avaliação Neurológica
+                Simplificada (ANS) em dados digitais padronizados. Essa etapa
+                garante a qualidade e uniformidade dos dados que alimentarão o
+                sistema preditivo.
               </p>
             </div>
           </div>
 
           <div class="eta-card">
-            <img src="./img/icon/colum.png">
+            <img src="./img/icon/colum.png" />
 
             <div class="eta-texto">
-              <h3 data-i18n="etapas_card_3">Visualização de Dados das ANS e do SINAN</h3>
+              <h3 data-i18n="etapas_card_3">
+                Visualização de Dados das ANS e do SINAN
+              </h3>
               <p data-i18n="etapas_card_text_3">
-                Desenvolvimento de painéis interativos para análise de dados epidemiológicos. 
-                Permite identificar padrões, inconsistências e apoiar políticas públicas de forma clara e acessível.
+                Desenvolvimento de painéis interativos para análise de dados
+                epidemiológicos. Permite identificar padrões, inconsistências e
+                apoiar políticas públicas de forma clara e acessível.
               </p>
             </div>
           </div>
 
           <div class="eta-card">
-            <img src="./img/icon/IA.png">
+            <img src="./img/icon/IA.png" />
 
             <div class="eta-texto">
-              <h3 data-i18n="etapas_card_4">Desenvolvimento do modelo de IA hansen.Ai</h3>
+              <h3 data-i18n="etapas_card_4">
+                Desenvolvimento do modelo de IA hansen.Ai
+              </h3>
               <p data-i18n="etapas_card_text_4">
-                Criação de um modelo preditivo treinado com dados reais do SUS. 
-                Seu objetivo é antecipar a progressão da hanseníase e auxiliar decisões clínicas personalizadas.
+                Criação de um modelo preditivo treinado com dados reais do SUS.
+                Seu objetivo é antecipar a progressão da hanseníase e auxiliar
+                decisões clínicas personalizadas.
               </p>
             </div>
           </div>
-
         </div>
-
       </section>
 
       <!--=========== parceiros ===========-->
       <section class="container parceiros" id="parceiros">
-
-        <div class="parceiros-texto"> 
+        <div class="parceiros-texto">
           <h1 data-i18n="parceiros_title">Conheça nossos parceiros</h1>
         </div>
-       
+
         <selection class="parceiros_img">
           <ul id="image-list">
-            <li><img src="./img/parceiros/CNPq.png" alt=""></li>
-            <li><img src="./img/parceiros/dotLAB.png" alt=""></li>
-            <li><img src="./img/parceiros/FENSG.png" alt=""></li>
-            <li><img src="./img/parceiros/IF.png" alt=""></li>
-            <li><img src="./img/parceiros/NHR.png" alt=""></li>
-            <li><img src="./img/parceiros/PPGEC.png" alt=""></li>
-            <li><img src="./img/parceiros/UFPB.png" alt=""></li>
-            <li><img src="./img/parceiros/UPE.png" alt=""></li>
+            <li><img src="./img/parceiros/CNPq.png" alt="" /></li>
+            <li><img src="./img/parceiros/dotLAB.png" alt="" /></li>
+            <li><img src="./img/parceiros/FENSG.png" alt="" /></li>
+            <li><img src="./img/parceiros/IF.png" alt="" /></li>
+            <li><img src="./img/parceiros/NHR.png" alt="" /></li>
+            <li><img src="./img/parceiros/PPGEC.png" alt="" /></li>
+            <li><img src="./img/parceiros/UFPB.png" alt="" /></li>
+            <li><img src="./img/parceiros/UPE.png" alt="" /></li>
           </ul>
         </selection>
       </section>
 
       <!--=========== produções ===========-->
       <section class="producoes" id="producoes">
-        
         <div class="producoes-texto">
           <h1 data-i18n="producoes_title">Produções Científicas</h1>
         </div>
 
         <div class="producoes-cards">
           <div class="prod-card">
-            <h3 data-i18n="prod_card_1">
-              AUTOMATIC INFORMATION EXTRACTION FROM NEUROLOGICAL ASSESSMENT RECORDS FOR LEPROSY CASES USING AI
-            </h3>
+            <a
+              data-i18n="prod_card_1"
+              href="https://sol.sbc.org.br/index.php/sbsi_estendido/article/view/34630/34421"
+            >
+              AUTOMATIC INFORMATION EXTRACTION FROM NEUROLOGICAL ASSESSMENT
+              RECORDS FOR LEPROSY CASES USING AI
+            </a>
           </div>
 
           <div class="prod-card">
-            <h3 data-i18n="prod_card_2">
-              COMPARING YOLD AND DETECTRON2 MODELS FOR AUTOMATIC EXTRACTING PATIENTS INFORMATION FROM LEPROSY ASSESSMENT FORM
-            </h3>
+            <a
+              data-i18n="prod_card_2"
+              href="https://sol.sbc.org.br/index.php/sbcas/article/view/35507/35294"
+            >
+              COMPARING YOLD AND DETECTRON2 MODELS FOR AUTOMATIC EXTRACTING
+              PATIENTS INFORMATION FROM LEPROSY ASSESSMENT FORM
+            </a>
           </div>
 
           <div class="prod-card">
-            <h3 data-i18n="prod_card_3">
-              HANSEN.APP: SIMPLIFIED NEUROLOGICAL ASSESSMENT FORM APPLICATION FOR DATA COLLECTION TO SUPPORT HANSEN’S DISEASE TREATMENT
-            </h3>
+            <a
+              data-i18n="prod_card_3"
+              href="https://sol.sbc.org.br/index.php/sbsi_estendido/article/view/34615/34406"
+            >
+              HANSEN.APP: SIMPLIFIED NEUROLOGICAL ASSESSMENT FORM APPLICATION
+              FOR DATA COLLECTION TO SUPPORT HANSEN’S DISEASE TREATMENT
+            </a>
           </div>
 
           <div class="prod-card">
-            <h3 data-i18n="prod_card_4">
-              HEALTH GUARDIAN - A INTELIGÊNCIA ARTIFICIAL A SERVIÇO DO TRATAMENTO DAS DOENÇAS TROPICAIS NEGLIGENCIADAS
-            </h3>
+            <a
+              data-i18n="prod_card_4"
+              href="https://sol.sbc.org.br/index.php/sbsc/article/view/28111"
+            >
+              HEALTH GUARDIAN - A INTELIGÊNCIA ARTIFICIAL A SERVIÇO DO
+              TRATAMENTO DAS DOENÇAS TROPICAIS NEGLIGENCIADAS
+            </a>
           </div>
 
           <div class="prod-card">
-            <h3 data-i18n="prod_card_5">
-              ON THE USAGE OF ARTIFICIAL INTELLIGENCE IN LEPROSY CARE: A SYSTEMATIC LITERATURE REVIEW
-            </h3>
+            <a
+              data-i18n="prod_card_5"
+              href="https://journals.plos.org/ploscompbiol/article/metrics?id=10.1371/journal.pcbi.1012550#discussedHeader"
+            >
+              ON THE USAGE OF ARTIFICIAL INTELLIGENCE IN LEPROSY CARE: A
+              SYSTEMATIC LITERATURE REVIEW
+            </a>
           </div>
 
           <div class="prod-card">
-            <h3 data-i18n="prod_card_6">
-              PAINEL INTERATIVO PARA MONITORAMENTO DE CONTATOS DE PACIENTES COM HANSENÍASE NO BRASIL: UMA FERRAMENTA ALINHADA À ESTRATÉGIA GLOBAL 2021-2030.
-            </h3>
+            <a
+              data-i18n="prod_card_6"
+              href="https://periodicos.saude.sp.gov.br/hansenologia/issue/view/2737"
+            >
+              PAINEL INTERATIVO PARA MONITORAMENTO DE CONTATOS DE PACIENTES COM
+              HANSENÍASE NO BRASIL: UMA FERRAMENTA ALINHADA À ESTRATÉGIA GLOBAL
+              2021-2030.
+            </a>
           </div>
         </div>
       </section>
 
       <section class="contato" id="contato">
-
         <div class="contato-texto">
-          <h1 data-i18n="contato_title">Se inscreva na nossa Newsletter para receber notícias</h1>    
+          <h1 data-i18n="contato_title">
+            Se inscreva na nossa Newsletter para receber notícias
+          </h1>
         </div>
 
         <div class="contato-form">
-          <input type="text" placeholder="Nome" id="nameInput" data-i18n-placeholder="namePlaceholder">
-          <input type="email" placeholder="E-mail" id="emailInput">
+          <input
+            type="text"
+            placeholder="Nome"
+            id="nameInput"
+            data-i18n-placeholder="namePlaceholder"
+          />
+          <input type="email" placeholder="E-mail" id="emailInput" />
         </div>
 
         <div class="OBS">
           <span>
-            Your e-mail address is only used to send you our newsletter and information about the activities of<br> dotLAB Brazil | 
-            Hansen.Ai. You can always use the unsubscribe link included in the newsletter.
+            Your e-mail address is only used to send you our newsletter and
+            information about the activities of<br />
+            dotLAB Brazil | Hansen.Ai. You can always use the unsubscribe link
+            included in the newsletter.
           </span>
         </div>
 
         <div class="contato-button">
-          <button data-i18n="contato_button">Inscrever-se</button>
+          <a href="https://www.instagram.com/dot.hansenai/">
+            <button data-i18n="contato_button">Siga-nos</button>
+          </a>
         </div>
       </section>
     </main>
 
     <footer class="footer-container container">
-    
       <div class="colunas">
-
         <div class="log">
-          <img class="logo-footer" src="./img/logo.png">
+          <img class="logo-footer" src="./img/logo.png" />
         </div>
-        
+
         <div class="navegue">
           <h3 data-i18n="Navegacao">Navegação</h3>
           <ul>
             <li><a href="#inicio" data-i18n="menu_home">Início</a></li>
-            <li><a href="./pages/sobre.html" data-i18n="menu_about">Sobre</a></li>
-            <li><a href="./pages/equipe.html" data-i18n="menu_team">Equipe</a></li>
-            <li><a href="#producoes" data-i18n="menu_projects">Produções</a></li>
-            <li><a href="./pages/producoes.html" data-i18n="menu_tecnica">Técnica</a></li>
-            <li><a href="./pages/producoes.html" data-i18n="menu_relatorio">Relatório</a></li>
+            <li>
+              <a href="./pages/sobre.html" data-i18n="menu_about">Sobre</a>
+            </li>
+            <li>
+              <a href="./pages/equipe.html" data-i18n="menu_team">Equipe</a>
+            </li>
+            <li>
+              <a href="./pages/producoes.html" data-i18n="menu_projects">Produções</a>
+            </li>
+            <li>
+              <a
+                href="https://aws.amazon.com/pt/blogs/aws-brasil/a-computacao-na-aws-impulsionando-pesquisas-em-ia-na-saude/?fbclid=PAZXh0bgNhZW0CMTEAAafA_7ytEckhoVCX7P1R3JNnNEGpsGg_DFe1sIRshczC3dzw6Md9FDuIrNeYYg_aem_vPmEDXy8zvuxnB5iQS_2_Q"
+                data-i18n="menu_tecnica"
+                >Técnica</a
+              >
+            </li>
+            <li>
+              <a
+                href="./docs/Relatório-Hansen-2024.1.pdf"
+                data-i18n="menu_relatorio"
+                >Relatório</a
+              >
+            </li>
             <li><a href="#contato" data-i18n="menu_contact">Contato</a></li>
           </ul>
         </div>
@@ -340,7 +418,9 @@
           <ul>
             <li><a href="https://valeria.dotlabbrazil.com.br/">Valeria</a></li>
             <li><a href="https://www.who.int/pt/about">OMS</a></li>
-            <li><a href="https://www.gov.br/saude/pt-br">Ministério da Saúde</a></li>
+            <li>
+              <a href="https://www.gov.br/saude/pt-br">Ministério da Saúde</a>
+            </li>
             <li><a href="https://www.gov.br/saude/pt-br/sus">SUS</a></li>
             <li><a href="https://portalsinan.saude.gov.br/">SINAN</a></li>
             <li><a href="https://ansd.dotlabbrazil.com.br/">ANSd</a></li>
@@ -351,21 +431,31 @@
         <div class="contact">
           <h3 data-i18n="Contato">Contato</h3>
           <p data-i18n="contact">
-            O projeto hansen.ai é um projeto de pesquisa desenvolvido pelo <a href="https://www.instagram.com/dotlabbrazil/" target="_blank">@dotlabbrazil</a> e 
-            financiado pelo <a href="https://www.instagram.com/cnpq_oficial/" target="_blank">@cnpq_oficial</a> para pensar como a IA pode ajudar no tratamento da hanseníase.
+            O projeto hansen.ai é um projeto de pesquisa desenvolvido pelo
+            <a href="https://www.instagram.com/dotlabbrazil/" target="_blank"
+              >@dotlabbrazil</a
+            >
+            e financiado pelo
+            <a href="https://www.instagram.com/cnpq_oficial/" target="_blank"
+              >@cnpq_oficial</a
+            >
+            para pensar como a IA pode ajudar no tratamento da hanseníase.
           </p>
           <ul>
             <li>
-              <img src="./img/icon/insta.png">
-              <a href="https://www.instagram.com/dotlabbrazil/">@dotlabbrazil</a>
+              <img src="./img/icon/insta.png" />
+              <a href="https://www.instagram.com/dotlabbrazil/"
+                >@dotlabbrazil</a
+              >
             </li>
             <li>
-              <img src="./img/icon/insta.png">
-              <a href="https://www.instagram.com/dot.hansenai/">@dot.hansenai</a>
+              <img src="./img/icon/insta.png" />
+              <a href="https://www.instagram.com/dot.hansenai/"
+                >@dot.hansenai</a
+              >
             </li>
           </ul>
         </div>
-      
       </div>
 
       <span>© Copyright 2025 dotLAB Brazil</span>
@@ -373,6 +463,5 @@
 
     <script src="./js/index.js"></script>
     <script src="./js/lenguage.js"></script>
-
   </body>
 </html>

@@ -45,12 +45,25 @@ document.addEventListener("DOMContentLoaded", () => {
       prodOptions.style.display === "block" ? "none" : "block";
   });
 
-  // Ao escolher uma opção, redireciona para a página de produções com a âncora apropriada
+  // Ao escolher uma opção, redireciona de acordo com o tipo selecionado
   prodOptions.querySelectorAll("li").forEach((option) => {
     option.addEventListener("click", function () {
       const value = this.dataset.value;
-      // navega corretamente de qualquer página (raiz ou /pages/)
-      window.location.href = `${producoesPath}#${value}`;
+
+      const relatorioFile = 'Relatório-Hansen-2024.1.pdf';
+      const relatorioLink = encodeURI(
+        window.location.pathname.includes('/pages/')
+          ? '../docs/' + relatorioFile
+          : './docs/' + relatorioFile
+      );
+
+      const productionLinks = {
+        cientifica: `${producoesPath}#cientifica`,
+        tecnica: 'https://aws.amazon.com/pt/blogs/aws-brasil/a-computacao-na-aws-impulsionando-pesquisas-em-ia-na-saude/',
+        relatorio: relatorioLink,
+      };
+
+      window.location.href = productionLinks[value] || `${producoesPath}#${value}`;
       prodOptions.style.display = "none";
     });
   });

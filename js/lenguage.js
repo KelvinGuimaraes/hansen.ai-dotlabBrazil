@@ -18,7 +18,7 @@ const translations = {
     hero_subtitle: "Projeto hansen.ai",
     hero_title: "Inteligência Artificial para Hanseníase",
     hero_text:
-      "O Hansen.ai é um projeto que utiliza inteligência artificial, ciência de dados e tecnologia em saúde para apoiar o diagnóstico, o acompanhamento clínico e a vigilância epidemiológica da hanseníase no Brasil.",
+      "O hansen.ai é um projeto que utiliza inteligência artificial, ciência de dados e tecnologia em saúde para <b>apoiar o diagnóstico, o acompanhamento clínico e a vigilância epidemiológica da hanseníase no Brasil.</b>",
     hero_button: "Entre em contato",
 
     card_digital_1: "Transformação Digital",
@@ -78,7 +78,7 @@ const translations = {
       "PAINEL INTERATIVO PARA MONITORAMENTO E ANÁLISE DA EVOLUÇÃO DO GRAU DE INCAPACIDADE DECORRENTE DA HANSENÍASE NO BRASIL: UMA FERRAMENTA ALINHADA À ESTRATÉGIA GLOBAL 2021-2030",
 
     contato_title: "Se inscreva na nossa Newsletter para receber notícias",
-    contato_button: "Inscreva-se",
+    contato_button: "siga-nos",
     namePlaceholder: "Nome",
 
     Navegacao: "Navegação",
@@ -173,7 +173,7 @@ const translations = {
     hero_subtitle: "hansen.ai Project",
     hero_title: "Artificial Intelligence for Leprosy",
     hero_text:
-      "Hansen.ai is a project that uses artificial intelligence, data science, and health technology to support diagnosis, clinical follow-up, and epidemiological surveillance of leprosy in Brazil.",
+      "hansen.ai is a project that uses artificial intelligence, data science, and health technology to <b>support diagnosis, clinical follow-up, and epidemiological surveillance of leprosy in Brazil.</b>",
     hero_button: "Contact us",
 
     card_digital_1: "Digital Transformation",
@@ -233,7 +233,7 @@ const translations = {
       "Interactive Panel for Monitoring and Analyzing the Evolution of Disability Due to Leprosy in Brazil: A Tool Aligned with the 2021-2030 Global Strategy",
 
     contato_title: "Subscribe to our Newsletter to receive updates",
-    contato_button: "Sign up",
+    contato_button: "Follow us",
     namePlaceholder: "Name",
 
     Navegacao: "Navigation",

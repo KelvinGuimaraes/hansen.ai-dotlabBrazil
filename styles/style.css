@@ -71,8 +71,8 @@ nav ul li a:hover {
 .language-dropdown {
   position: relative;
   cursor: pointer;
-  font-weight: 600;
-  font-size: 18px;
+  font-weight: 700;
+  font-size: 16px;
   color: var(--cor-secundary);
 }
 
@@ -117,9 +117,14 @@ nav ul li a:hover {
 .produc-dropdown {
   position: relative;
   cursor: pointer;
-  font-weight: 600;
-  font-size: 18px;
+  font-weight: 700;
+  font-size: 17px;
   color: var(--cor-secundary);
+}
+
+.selected-produc p {
+  font-weight: 700;
+  font-size: 17px;
 }
 
 .selected-produc {
@@ -517,14 +522,14 @@ nav ul li a:hover {
 .producoes-cards {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 30px;
+  gap: 20px;
   max-width: 1200px;
   margin: 0 auto;
 }
 
 .prod-card {
   width: 500px;
-  height: 100px;
+  height: 120px;
   border-radius: 12px;
   padding: 40px 28px;
   background: #f9f9f9;
@@ -532,18 +537,19 @@ nav ul li a:hover {
   transition:
     transform 0.3s ease,
     box-shadow 0.3s ease;
+  cursor: pointer;
+  pointer-events: all;
 }
 
 .prod-card:hover {
   transform: translateY(-6px);
   box-shadow: 0 16px 35px rgba(0, 0, 0, 0.12);
 }
+.prod-card a:hover {
+  color: var(--cor-terciary);
+}
 
-.prod-card h3 {
-  width: 470;
-  height: 101;
-  top: 3733px;
-  left: 185px;
+.prod-card a {
   font-size: 20px;
   font-weight: 700;
   color: var(--cor-primary);
@@ -670,7 +676,8 @@ nav ul li a:hover {
 }
 
 .footer-container a:hover {
-  color: var(--cor-secundary);
+  color: var(--cor-terciary);
+  font-weight: bold;
 }
 
 /* texto contato */

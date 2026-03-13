@@ -282,6 +282,8 @@
   align-items: center;
   display: flex;
   justify-content: center;
+  cursor: pointer;
+  pointer-events: all;
 }
 
 .dot{
@@ -291,6 +293,9 @@
   background: #ccc;
   border-radius: 50%;
   display: inline-block;
+}
+.dot:hover {
+  background: #5b2d91;
 }
 
 .dot.active{
