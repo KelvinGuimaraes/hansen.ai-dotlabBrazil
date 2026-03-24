@@ -1,0 +1,349 @@
+/* ======= Hero ======== */
+.hero-1 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 80px 0;
+  margin-top: -80px;
+}
+
+.hero-img img {
+  width: 552px;
+  height: auto;
+  top: 273px;
+  margin-left: -80px;
+}
+
+/* ======= objetivo ======== */
+
+.objetivo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 0;
+  margin-top: -120px;
+}
+
+.objetivo-text {
+  max-width: 600px;
+  margin-right: 200px;
+}
+
+.objetivo-text h1 {
+  font-size: 32px;
+  color: var(--cor-primary);
+  margin-bottom: 20px;
+}
+.objetivo-text h2 {
+  font-size: 20px;
+  color: var(--cor-terciary);
+}
+.objetivo-text p {
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.objetivo-image img {
+  width: 400px;
+  height: auto;
+  top: 298px;
+  margin: 0;
+}
+
+/* ======= desenvolvimento ======== */
+.desenvolvimento {
+  padding: 80px 0px;
+  margin-top: -100px;
+}
+
+/* TEXTO */
+.dev-text {
+  max-width: 900px;
+  margin-bottom: 40px;
+}
+
+.dev-text h1 {
+  color: var(--cor-primary);
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+
+.dev-text p {
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+/* LINHA E CIRCULOS */
+.dev-icones {
+  position: relative;
+  height: 60px;
+  margin-bottom: 10px;
+  margin-top: 5px;
+}
+
+.linha {
+  width: 100%;
+  height: 4px;
+  background: #3d2b63;
+  position: absolute;
+  top: 28px;
+  left: 0;
+}
+
+.circulo1,
+.circulo2 {
+  width: 30px;
+  height: 30px;
+  background: #3d2b63;
+  border-radius: 50%;
+  position: absolute;
+  top: 14px;
+}
+.circulo1 {
+  left: 35px;
+}
+.circulo2 {
+  left: 60%;
+}
+
+/* CARDS */
+.dev-cards {
+  display: flex;
+  gap: 40px;
+}
+
+.dev-card {
+  position: relative;
+  background: #F9F9F9;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0px 4px 4px 0px #00000040;
+  display: flex;
+  gap: 15px;
+  align-items: flex-start;
+}
+
+/* pontinha do card */
+.dev-card::before {
+  content: "";
+  position: absolute;
+  top: -14px;
+  left: 40px;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-bottom: 14px solid #F9F9F9;
+}
+
+/* icone */
+.dev-card img {
+  width: 40px;
+}
+
+/* texto */
+.dev-card-texto h3 {
+  color: var(--cor-primary);
+  font-size: 18px;
+  margin-bottom: 8px;
+}
+
+.dev-card-texto p {
+  font-size: 15px;
+  line-height: 1.4;
+}
+
+/* ===== Processos ===== */
+.processos {
+  margin-bottom: 50px;
+}
+.proce-text h1 {
+  width: 557px;
+  height: 48px;
+  top: 2058px;
+  left: 140px;
+  color: var(--cor-primary);
+  margin-bottom: 20px;
+}
+
+.proce-text p {
+  width: 1160px;
+  height: 30px;
+  top: 2138px;
+  left: 139px;
+  margin-bottom: 60px;
+}
+
+/* CARD DO SLIDE */
+.slider{
+  display: flex;
+  justify-content: center;
+}
+
+.slide{
+  display: none;
+  position: relative;
+  background: #ececec;
+  padding: 60px 40px 50px;
+  border-radius: 12px;
+  max-width: 1000px;
+  width: 100%;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.slide.active{
+  display: block;
+}
+
+/* número circular */
+.slide-numero{
+  position: absolute;
+  top: -35px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70px;
+  height: 70px;
+  background: #3d2466;
+  color: white;
+  border-radius: 50%;
+  font-size: 24px;
+  font-weight: bold;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.slide-numero img{
+  position: absolute;
+  width: 70px;
+  height: 70px;
+}
+
+.slide-numero p {
+  font-size: 40px;
+  font-weight: 700;
+  font-style: bold;
+  z-index: 1;
+}
+
+/* título */
+.slide h2{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: var(--cor-primary);
+  font-size: 32px;
+  margin-bottom: 20px;
+}
+
+/* PASSOS */
+.passos {
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+/* card do passo */
+.passo {
+  background: var(--cor-primary);
+  color: white;
+  padding: 20px 25px;
+  min-width: 120px;
+  text-align: left;
+  font-size: 16px;
+  font-weight: 600;
+  position: relative;
+}
+
+/* pontinha inferior */
+.passo::after{
+  content: "";
+  position: absolute;
+  bottom: -12px;
+  left: 0px;
+
+  width: 0;
+  height: 0;
+
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  border-top: 12px solid #3d2466;
+}
+
+/* indicadores */
+.indicadores{
+  margin-top: 25px;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  cursor: pointer;
+  pointer-events: all;
+}
+
+.dot{
+  height: 12px;
+  width: 12px;
+  margin: 0 6px;
+  background: #ccc;
+  border-radius: 50%;
+  display: inline-block;
+}
+.dot:hover {
+  background: #5b2d91;
+}
+
+.dot.active{
+  background: #5b2d91;
+}
+
+/* ===== dotlab ===== */
+.dotlab {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0;
+}
+
+.dotlab-text {
+  max-width: 700px;
+  margin-right: 200px;
+}
+
+.dotlab-text h1 {
+  font-size: 32px;
+  color: var(--cor-primary);
+  margin-bottom: 20px;
+}
+
+.dotlab-text p {
+  font-size: 20px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.dotlab-button button {
+  background: linear-gradient(90deg, #62339c 0%, #3b205c 100%);
+  color: #ffffff;
+  width: 300px;
+  height: 59px;
+  font-size: 18px;
+  font-weight: 600;
+  top: 667px;
+  left: 140px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.dotlab-button button:hover {
+  color: #777; /* hover com letra cinza */
+}
+
+.dotlab-img img {
+  width: 400px;
+  height: auto;
+  top: 298px;
+  margin: 0;
+}

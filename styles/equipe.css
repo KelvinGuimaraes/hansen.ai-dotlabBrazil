@@ -1,0 +1,118 @@
+.equipe {
+  position: relative;
+  top: 10px;
+  margin-bottom: 20px;
+}
+
+.hansen h1 {
+  width: 557px;
+  height: 95px;
+  top: 370px;
+  left: 140px;
+  color: var(--cor-primary);
+  margin-top: 50px;
+  margin-bottom: -50px;
+}
+
+.equipe-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: auto; /* força ficar na base do card */
+    padding-bottom: 20px;
+}
+
+.equipe-button button {
+  background: linear-gradient(90deg, #62339c 0%, #3b205c 100%);
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 700;
+
+  width: 212px;
+  height: 47px;
+  top: 1018px;
+  left: 215px;
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+.equipe-button button:hover {
+  color: #777; /* hover com letra cinza */
+}
+
+.equipe-hansen {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+}
+
+.equipe-hansen li {
+  display: flex;
+  flex-direction: column;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0px 8px 8px 2px #00000026;
+  padding-bottom: 0; /* botão terá espaçamento em .equipe-button */
+  width: 360px;
+  height: 37rem;
+  overflow: hidden; /* garante que a imagem seja recortada dentro do card */
+}
+
+.equipe-hansen li > img {
+  width: 100%;
+  height: 369px; /* altura fixa para consistência */
+  object-fit: cover; /* mantém o corte central e preenche o espaço */
+  display: block;
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.equipe-hansen li h2 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--cor-secundary);
+  margin-top: 20px;
+}
+
+.equipe-hansen li p {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 15px;
+  margin: 20px;
+}
+
+@media (max-width: 900px) {
+  .equipe-hansen {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 800px) {
+  .equipe h1 {
+    font-size: 1.5rem;
+    margin-top: 20px;
+  }
+
+  .equipe p {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .equipe-hansen li h2 {
+    font-size: 1rem;
+  }
+  .equipe-hansen li p {
+    font-size: 0.875rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .equipe-hansen {
+    grid-template-columns: 1fr;
+  }
+}
