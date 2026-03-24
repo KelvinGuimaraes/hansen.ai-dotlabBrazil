@@ -1,4 +1,3 @@
-/* MENU RESPONSIVO
 document.addEventListener("DOMContentLoaded", function () {
   const menuButton = document.querySelector(".menu-button");
   const navbar = document.querySelector(".navbar");
@@ -28,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
       navbar.classList.remove("active");
     }
   });
-}); */
+});
 
 /* ===== Dropdown de Produções ===== */
 document.addEventListener("DOMContentLoaded", () => {

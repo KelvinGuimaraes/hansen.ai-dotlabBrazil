@@ -1,0 +1,260 @@
+/* ============================================================
+   RESPONSIVIDADE — SOBRE (sobre.css)
+   Tablet: max-width 1024px
+   Mobile: max-width 600px
+   ============================================================ */
+
+/* ===================== TABLET ===================== */
+@media (max-width: 1024px) {
+
+  /* ===== HERO-1 ===== */
+  .hero-1 {
+    flex-direction: column;
+    padding: 60px 0 40px;
+    margin-top: 0;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .hero-text {
+    max-width: 100%;
+    margin-right: 0;
+  }
+
+  .hero-button {
+    display: flex;
+    justify-content: center;
+  }
+
+  .hero-img img {
+    width: 380px;
+    margin-left: 0;
+  }
+
+  /* ===== OBJETIVO ===== */
+  .objetivo {
+    flex-direction: column-reverse;
+    padding: 40px 0;
+    margin-top: 0;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .objetivo-text {
+    max-width: 100%;
+    margin-right: 0;
+  }
+
+  .objetivo-text h1 {
+    font-size: 28px;
+  }
+
+  .objetivo-text p {
+    font-size: 18px;
+  }
+
+  /* ===== DESENVOLVIMENTO ===== */
+  .desenvolvimento {
+    padding: 60px 0;
+    margin-top: 0;
+  }
+
+  .dev-text h1 {
+    font-size: 28px;
+  }
+
+  .dev-text p {
+    font-size: 16px;
+  }
+
+  .dev-cards {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .dev-card {
+    width: 100%;
+    box-sizing: border-box;
+  }
+
+  /* ===== PROCESSOS ===== */
+  .proce-text h1 {
+    width: auto;
+    height: auto;
+    font-size: 28px;
+  }
+
+  .proce-text p {
+    width: auto;
+    height: auto;
+    font-size: 18px;
+  }
+
+  .slide {
+    padding: 60px 30px 40px;
+  }
+
+  .passos {
+    gap: 12px;
+  }
+
+  .passo {
+    flex: 1 1 calc(50% - 6px);
+    min-width: unset;
+    font-size: 15px;
+    padding: 16px 18px;
+  }
+
+  /* ===== DOTLAB ===== */
+  .dotlab {
+    flex-direction: column;
+    gap: 40px;
+    text-align: center;
+  }
+
+  .dotlab-text {
+    max-width: 100%;
+    margin-right: 0;
+  }
+
+  .dotlab-text h1 {
+    font-size: 28px;
+  }
+
+  .dotlab-text p {
+    font-size: 18px;
+  }
+
+  .dotlab-button {
+    display: flex;
+    justify-content: center;
+  }
+
+  .dotlab-img img {
+    width: 320px;
+  }
+}
+
+/* ===================== MOBILE ===================== */
+@media (max-width: 600px) {
+
+  /* ===== HERO-1 ===== */
+  .hero-1 {
+    padding: 40px 0 30px;
+  }
+
+  .hero-text h1 {
+    font-size: 24px;
+  }
+
+  .hero-text p {
+    font-size: 16px;
+  }
+
+  .hero-button button {
+    width: 220px;
+    height: 50px;
+    font-size: 16px;
+  }
+
+  .hero-img img {
+    width: 260px;
+  }
+
+  /* ===== OBJETIVO ===== */
+  .objetivo {
+    padding: 30px 0;
+    gap: 30px;
+  }
+
+  .objetivo-text h1 {
+    font-size: 22px;
+  }
+
+  .objetivo-text p {
+    font-size: 15px;
+  }
+
+  /* ===== DESENVOLVIMENTO ===== */
+  .desenvolvimento {
+    padding: 40px 0;
+  }
+
+  .dev-text {
+    max-width: 100%;
+  }
+
+  .dev-text h1 {
+    font-size: 22px;
+  }
+
+  .dev-text p {
+    font-size: 15px;
+  }
+
+  .dev-card-texto h3 {
+    font-size: 16px;
+  }
+
+  .dev-card-texto p {
+    font-size: 14px;
+  }
+
+  /* ===== PROCESSOS ===== */
+  .processos {
+    margin-bottom: 30px;
+  }
+
+  .proce-text h1 {
+    font-size: 22px;
+  }
+
+  .proce-text p {
+    font-size: 15px;
+    margin-bottom: 40px;
+  }
+
+  .slide {
+    padding: 55px 20px 30px;
+  }
+
+  .slide h2 {
+    font-size: 22px;
+  }
+
+  .passos {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .passo {
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 14px;
+    padding: 14px 16px;
+  }
+
+  /* ===== DOTLAB ===== */
+  .dotlab {
+    padding: 30px 0;
+    gap: 30px;
+  }
+
+  .dotlab-text h1 {
+    font-size: 22px;
+  }
+
+  .dotlab-text p {
+    font-size: 15px;
+  }
+
+  .dotlab-button button {
+    width: 240px;
+    height: 50px;
+    font-size: 16px;
+  }
+
+  .dotlab-img img {
+    width: 220px;
+  }
+}
