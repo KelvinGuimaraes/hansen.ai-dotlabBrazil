@@ -1,3 +1,5 @@
+@import url(../styles/global.css);
+
 :root {
   --cor-primary: #3e246e;
   --cor-secundary: #62339c;

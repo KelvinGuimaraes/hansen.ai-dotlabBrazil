@@ -1,4 +1,4 @@
-@import url(../styles/resp/home.css);
+@import url(../styles/global.css);
 
 :root {
   --cor-primary: #3e246e;
@@ -632,7 +632,7 @@ nav ul li a:hover {
   display: flex;
   flex-direction: column;
   gap: 40px;
-  padding: 80px 40px 40px 40px;
+  background-color: #f9f9f99f;
 }
 
 /* área principal do footer */

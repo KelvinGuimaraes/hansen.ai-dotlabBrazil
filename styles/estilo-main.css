@@ -1,8 +1,17 @@
 @import url(../styles/global.css);
 @import url(../styles/index.css);
+@import url(../styles/style.css);
 @import url(../styles/sobre.css);
-@import url(../styles/producoes.css);
 @import url(../styles/equipe.css);
+@import url(../styles/producoes.css);
+
 @import url(../styles/resp/about.css);
-@import url(../styles/resp/production.css);
 @import url(../styles/resp/home.css);
+@import url(../styles/resp/team.css);
+@import url(../styles/resp/production.css);
+
+:root {
+  --cor-primary: #3e246e;
+  --cor-secundary: #62339c;
+  --cor-terciary: #8d369f;
+}

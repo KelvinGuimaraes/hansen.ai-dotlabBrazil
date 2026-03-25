@@ -3,16 +3,19 @@
    Tablet: max-width 1024px
    Mobile: max-width 600px
    ============================================================ */
-
+@import url(../styles/global.css);
 /* ===================== TABLET ===================== */
 @media (max-width: 1024px) {
+
+  .hansen {
+    margin-bottom: 100px;
+  }
 
   .hansen h1 {
     width: auto;
     height: auto;
     font-size: 26px;
     margin-top: 40px;
-    margin-bottom: -30px;
   }
 
   .equipe-hansen {
@@ -57,7 +60,7 @@
   }
 
   .equipe-hansen li > img {
-    height: 280px;
+    height: 400px;
   }
 
   .equipe-hansen li h2 {

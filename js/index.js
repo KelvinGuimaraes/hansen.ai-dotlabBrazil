@@ -163,3 +163,33 @@ setInterval(() => {
   }
   mostrarSlide(slideAtual);
 }, 5000);
+
+/* ===== Toggle cards desenvolvimento ===== */
+document.addEventListener("DOMContentLoaded", () => {
+  const circulo1 = document.getElementById("circulo1");
+  const circulo2 = document.getElementById("circulo2");
+  const card1 = document.getElementById("card1");
+  const card2 = document.getElementById("card2");
+
+  // Inicializa com card1 visível
+  if (card1) {
+    card1.classList.add("active");
+  }
+  if (card2) {
+    card2.classList.remove("active");
+  }
+
+  if (circulo1 && card1) {
+    circulo1.addEventListener("click", () => {
+      card1.classList.add("active");
+      card2.classList.remove("active");
+    });
+  }
+
+  if (circulo2 && card2) {
+    circulo2.addEventListener("click", () => {
+      card1.classList.remove("active");
+      card2.classList.add("active");
+    });
+  }
+});

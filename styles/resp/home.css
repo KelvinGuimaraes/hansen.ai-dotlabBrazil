@@ -3,15 +3,15 @@
    Tablet: max-width 1024px
    Mobile: max-width 600px
    ============================================================ */
-
+@import url(../styles/global.css);
 /* ===================== TABLET ===================== */
 @media (max-width: 1024px) {
-
   /* ===== HEADER ===== */
 
   .logo {
     display: flex;
     width: 120px;
+    margin-left: 20px;
   }
 
   .navegacao {
@@ -26,6 +26,7 @@
     align-items: center;
     width: 40px;
     height: 40px;
+    margin-right: 30px;
     background: none;
     border: none;
     cursor: pointer;
@@ -38,7 +39,7 @@
   .menu-button span,
   .menu-button span::before,
   .menu-button span::after {
-    content: '';
+    content: "";
     display: block;
     width: 26px;
     height: 3px;
@@ -80,11 +81,12 @@
   nav {
     position: absolute;
     top: 100%;
-    left: 0;
-    width: 100%;
+    width: 60%;
     background: #ffffff;
-    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
     z-index: 1000;
+    margin-left: 130px;
+    border-radius: 20px;
   }
 
   .navbar {
@@ -154,16 +156,17 @@
   }
 
   /* Botão dotLAB no menu mobile */
-  
+
   .link li {
     display: flex;
     align-items: center;
     justify-content: center;
   }
-  
+
   .link {
-    width: 100%;
+    max-width: 90%;
     margin-top: 15px;
+    margin-left: 10px;
     height: 50px;
     justify-content: flex-start;
     padding: 20px;
@@ -179,7 +182,6 @@
     border-radius: 50px;
     color: #ffffff !important;
   }
-
 
   /* ===== HERO ===== */
   .hero {
@@ -219,7 +221,7 @@
   /* CARD */
   .card {
     position: relative;
-    background: #b500009f;
+    background: #f9f9f99f;
     border-radius: 16px;
     padding: 40px 28px;
     box-shadow: 0px 4px 4px 0px #00000040;
@@ -337,6 +339,10 @@
   }
 
   /* ===== ETAPAS ===== */
+  .etapas-texto {
+   text-align: center;
+  }
+
   .etapas-texto h1 {
     width: auto;
     height: auto;
@@ -403,15 +409,47 @@
   }
 
   /* ===== FOOTER ===== */
+  .footer-container {
+    background-color: #f9f9f99f;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding: 80px 40px 40px 40px;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+
   .colunas {
+    justify-content: center;
+    align-items: center;
     grid-template-columns: 1fr 1fr;
     gap: 40px;
+  }
+
+  .footer-container a {
+    text-decoration: none;
+    font-size: 16px;
+    transition: 0.3s;
+    color: #474747;
+  }
+
+  .footer-container a:hover {
+    color: var(--cor-terciary);
+    font-weight: bold;
+  }
+
+  .insta {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
   }
 }
 
 /* ===================== MOBILE ===================== */
 @media (max-width: 600px) {
-
   /* ===== HEADER ===== */
   .logo {
     width: 120px;
@@ -459,7 +497,7 @@
     padding: 30px 20px;
   }
 
-    /* FAIXA ROXA (HOVER) */
+  /* FAIXA ROXA (HOVER) */
   .card::before {
     left: 12.5%;
     width: 60px;

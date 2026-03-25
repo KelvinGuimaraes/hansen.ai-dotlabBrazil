@@ -3,7 +3,7 @@
    Tablet: max-width 1024px
    Mobile: max-width 600px
    ============================================================ */
-
+@import url(../styles/global.css);
 /* ===================== TABLET ===================== */
 @media (max-width: 1024px) {
 

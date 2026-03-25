@@ -3,7 +3,7 @@
    Tablet: max-width 1024px
    Mobile: max-width 600px
    ============================================================ */
-
+@import url(../styles/global.css);
 /* ===================== TABLET ===================== */
 @media (max-width: 1024px) {
 
@@ -14,6 +14,7 @@
     margin-top: 0;
     gap: 40px;
     text-align: center;
+    margin-bottom: 20px;
   }
 
   .hero-text {
@@ -33,7 +34,7 @@
 
   /* ===== OBJETIVO ===== */
   .objetivo {
-    flex-direction: column-reverse;
+    flex-direction: column;
     padding: 40px 0;
     margin-top: 0;
     gap: 40px;
@@ -43,6 +44,7 @@
   .objetivo-text {
     max-width: 100%;
     margin-right: 0;
+    margin-bottom: -50px;
   }
 
   .objetivo-text h1 {
@@ -57,6 +59,7 @@
   .desenvolvimento {
     padding: 60px 0;
     margin-top: 0;
+    margin-bottom: 50px;
   }
 
   .dev-text h1 {
@@ -75,9 +78,24 @@
   .dev-card {
     width: 100%;
     box-sizing: border-box;
+    display: none;
   }
 
+  .dev-card.active {
+    display: flex;
+  }
+
+  .circulo1,
+  .circulo2 {
+    cursor: pointer;
+  }
+  
+
   /* ===== PROCESSOS ===== */
+  .processos {
+    margin-bottom: 20px;
+  }
+
   .proce-text h1 {
     width: auto;
     height: auto;
@@ -96,6 +114,7 @@
 
   .passos {
     gap: 12px;
+    margin: 10px;
   }
 
   .passo {
@@ -103,6 +122,7 @@
     min-width: unset;
     font-size: 15px;
     padding: 16px 18px;
+    margin: 5px;
   }
 
   /* ===== DOTLAB ===== */
@@ -110,11 +130,13 @@
     flex-direction: column;
     gap: 40px;
     text-align: center;
+    margin-top: 30px;
   }
 
   .dotlab-text {
     max-width: 100%;
     margin-right: 0;
+    order: 1;
   }
 
   .dotlab-text h1 {
@@ -125,9 +147,14 @@
     font-size: 18px;
   }
 
+  .dotlab-img {
+    order: 2;
+  }
+
   .dotlab-button {
     display: flex;
     justify-content: center;
+    order: 3;
   }
 
   .dotlab-img img {
@@ -200,6 +227,19 @@
     font-size: 14px;
   }
 
+  .dev-card {
+    display: none;
+  }
+
+  .dev-card.active {
+    display: flex;
+  }
+
+  .circulo1,
+  .circulo2 {
+    cursor: pointer;
+  }
+
   /* ===== PROCESSOS ===== */
   .processos {
     margin-bottom: 30px;
@@ -240,12 +280,26 @@
     gap: 30px;
   }
 
+  .dotlab-text {
+    order: 1;
+  }
+
   .dotlab-text h1 {
     font-size: 22px;
   }
 
   .dotlab-text p {
     font-size: 15px;
+  }
+
+  .dotlab-img {
+    order: 2;
+  }
+
+  .dotlab-button {
+    display: flex;
+    justify-content: center;
+    order: 3;
   }
 
   .dotlab-button button {
