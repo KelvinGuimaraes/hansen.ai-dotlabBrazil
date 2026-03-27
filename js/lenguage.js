@@ -158,6 +158,8 @@ const translations = {
     equi_descri_19: "Graduanda em Sistemas de Informação",
     equi_descri_20:
       "Coordenadora de Pesquisas na Fundação NHR Brasil, Pesquisadora convidada do dotLAB Brazil",
+    equi_descri_21:
+      "Graduado em Ciência da Computação, mestrando em Engenharia da Computação pelo PPGEC-UPE",
   },
 
   en: {
@@ -313,6 +315,8 @@ const translations = {
     equi_descri_19: "Undergraduate student in Information Systems",
     equi_descri_20:
       "Research Coordinator at the NHR Brazil Foundation, Visiting Researcher at dotLAB Brazil",
+    equi_descri_21:
+      "Graduated in Computer Science, currently pursuing a Master's degree in Computer Engineering at PPGEC-UPE.",
   },
 };
 

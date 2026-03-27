@@ -20,12 +20,44 @@
   margin-bottom: -50px;
 }
 
+.nome-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  position: relative;
+}
+
+/* Ícone começa escondido */
+.lattes {
+  opacity: 0;
+  transform: translateX(-10px);
+  transition: 0.3s ease;
+}
+
+.lattes img {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+}
+
+.lattes img:hover {
+  transform: scale(1.2);
+}
+
+/* Quando passar o mouse no CARD (li) */
+.equipe-hansen li:hover .lattes {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+/* botão */
 .equipe-button {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: auto; /* força ficar na base do card */
-    padding-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: auto; /* força ficar na base do card */
+  padding-bottom: 20px;
 }
 
 .equipe-button button {
@@ -46,6 +78,7 @@
   color: #777; /* hover com letra cinza */
 }
 
+/* cards da equipe */
 .equipe-hansen {
   margin-top: 50px;
   display: grid;
@@ -89,6 +122,73 @@
   text-align: center;
   font-size: 15px;
   margin: 20px;
+}
+
+/* MODAL */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  top: -20px;
+  width: 100%;
+  height: 150%;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modal-content {
+  background: #fff;
+  margin: 5% auto;
+  padding: 20px;
+  width: 90%;
+  max-width: 500px;
+  max-height: 80vh; /* limita à altura da tela */
+  overflow-y: auto; /* ativa scroll interno */
+  border-radius: 10px;
+  text-align: center;
+  animation: fadeIn 0.3s ease;
+}
+
+.modal-content p {
+  font-size: 15px;
+  text-align: justify;
+}
+
+.modal-content h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: var(--cor-secundary);
+}
+
+.modal-content img {
+  width: 200px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.modal-btn {
+  margin-top: 15px;
+  padding: 10px 20px;
+  border-radius: 30px;
+  background: linear-gradient(90deg, #62339c, #3b205c);
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.close {
+  float: right;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 
 @media (max-width: 900px) {
