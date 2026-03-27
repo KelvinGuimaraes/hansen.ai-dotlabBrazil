@@ -31,6 +31,7 @@
 /* Ícone começa escondido */
 .lattes {
   opacity: 0;
+  margin-top: 15px;
   transform: translateX(-10px);
   transition: 0.3s ease;
 }
@@ -130,10 +131,14 @@
   position: fixed;
   z-index: 999;
   left: 0;
-  top: -20px;
+  top: 0; /* CORRIGIDO */
   width: 100%;
-  height: 150%;
+  height: 100%;
   background-color: rgba(0, 0, 0, 0.6);
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .modal-content {
