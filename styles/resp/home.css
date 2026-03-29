@@ -5,7 +5,7 @@
    ============================================================ */
 @import url(../styles/global.css);
 /* ===================== TABLET ===================== */
-@media (max-width: 1024px) {
+@media (max-width: 1060px) {
   /* ===== HEADER ===== */
 
   .logo {
@@ -192,7 +192,7 @@
   }
 
   .hero-text {
-    max-width: 100%;
+    max-width: 60%;
     margin-right: 0;
   }
 
@@ -212,7 +212,7 @@
 
   .info-cards {
     display: grid;
-    grid-template-columns: repeat(1fr 1fr);
+    grid-template-columns: 1fr 1fr;
     gap: 30px;
     max-width: 1200px;
     margin: 0 auto;
@@ -340,18 +340,21 @@
 
   /* ===== ETAPAS ===== */
   .etapas-texto {
-   text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
   }
 
   .etapas-texto h1 {
-    width: auto;
-    height: auto;
+    width: 500px;
     font-size: 28px;
   }
 
   .etapas-texto p {
-    width: auto;
-    height: auto;
+    width: 800px;
+    height: 80px;
     font-size: 18px;
   }
 
@@ -362,10 +365,12 @@
   .etapas-cards {
     grid-template-columns: 1fr 1fr;
     gap: 20px;
+    width: 100%;
+    justify-items: center;
   }
 
   .eta-card {
-    width: 100%;
+    width: 400px;
     height: auto;
   }
 
@@ -387,8 +392,8 @@
   }
 
   .prod-card {
-    width: 100%;
-    height: auto;
+    width: 450px;
+    height: 70px;
     padding: 28px 20px;
   }
 
@@ -423,7 +428,7 @@
   .colunas {
     justify-content: center;
     align-items: center;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 40px;
   }
 
@@ -439,12 +444,88 @@
     font-weight: bold;
   }
 
+  .contact p {
+    max-width: 600px;
+    font-size: 16px;
+    color: #555;
+    line-height: 1.5;
+  }
+
   .insta {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
     gap: 20px;
+  }
+}
+
+@media (max-width: 900px) {
+
+  .etapas-texto {
+    gap: 35px;
+  }
+
+  .etapas-texto p {
+    width: 100%;
+    max-width: 500px;
+  }
+
+  .etapas-button {
+    margin-top: 40px;
+  }
+
+  .etapas-cards {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    width: 100%;
+    justify-items: center;
+  }
+
+  .eta-card {
+    max-width: 350px;
+    height: auto;
+  }
+
+  .colunas {
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+  }
+
+  .contato {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .contato-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+  }
+
+  .contato-form input {
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .logo-footer {
+    width: 180px;
+  }
+
+  .colunas {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+  }
+
+  .contact p {
+    max-width: 600px;
+    font-size: 16px;
   }
 }
 
