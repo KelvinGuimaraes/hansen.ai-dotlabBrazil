@@ -542,6 +542,10 @@
     padding: 40px 0 30px;
   }
 
+  .hero-text {
+    max-width: 100%;
+  }
+
   .hero-text h1 {
     font-size: 24px;
   }
@@ -552,6 +556,7 @@
 
   .hero-text p {
     font-size: 16px;
+    width: 400px;
   }
 
   .hero-button button {
