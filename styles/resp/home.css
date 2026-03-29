@@ -393,7 +393,7 @@
 
   .prod-card {
     width: 450px;
-    height: 70px;
+    height: auto;
     padding: 28px 20px;
   }
 
@@ -607,9 +607,12 @@
   /* ===== ETAPAS ===== */
   .etapas-texto {
     margin-top: 30px;
+    max-width: 400px;
+    gap: 5px;
   }
 
   .etapas-texto h1 {
+    width: 300px;
     font-size: 22px;
   }
 
