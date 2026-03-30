@@ -5,6 +5,13 @@
    ============================================================ */
 @import url(../styles/global.css);
 /* ===================== TABLET ===================== */
+
+@media (max-width: 1200px) {
+  .eta-card {
+    width: 450px;
+  }
+}
+
 @media (max-width: 1060px) {
   /* ===== HEADER ===== */
 
@@ -364,13 +371,14 @@
 
   .etapas-cards {
     grid-template-columns: 1fr 1fr;
-    gap: 20px;
+    gap: 10px;
     width: 100%;
     justify-items: center;
   }
 
   .eta-card {
-    width: 400px;
+    width: 350px;
+    max-width: 400px;
     height: auto;
   }
 
@@ -556,7 +564,6 @@
 
   .hero-text p {
     font-size: 16px;
-    width: 400px;
   }
 
   .hero-button button {
@@ -610,6 +617,13 @@
   }
 
   /* ===== ETAPAS ===== */
+
+  .etapas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
   .etapas-texto {
     margin-top: 30px;
     max-width: 400px;
@@ -627,6 +641,7 @@
   }
 
   .etapas-button button {
+    margin-top: 25px;
     width: 220px;
     height: 50px;
     font-size: 16px;
@@ -634,12 +649,14 @@
 
   .etapas-cards {
     grid-template-columns: 1fr;
+    justify-items: center;
   }
 
   .eta-card {
-    width: 300px;
+    width: 250px;
+    max-width: 400px;
     height: auto;
-    padding: 30px 20px;
+    padding: 30px 16px;
   }
 
   .eta-texto h3 {
