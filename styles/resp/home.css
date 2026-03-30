@@ -128,8 +128,18 @@
     padding: 14px 20px;
   }
 
+  .selected-produc p {
+    font-size: 16px;
+    font-weight: 600;
+  }
+
   .selected-language {
     padding: 14px 20px;
+  }
+
+  .selected-language {
+    font-size: 16px;
+    font-weight: 600;
   }
 
   /* Dropdown de idioma no menu mobile */
