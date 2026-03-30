@@ -92,7 +92,7 @@
     background: #ffffff;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
     z-index: 1000;
-    margin-left: 130px;
+    margin-left: 220px;
     border-radius: 20px;
   }
 
@@ -470,6 +470,10 @@
 
 @media (max-width: 900px) {
 
+  nav {
+    margin-left: 180px;
+  }
+
   .etapas-texto {
     gap: 35px;
   }
@@ -539,6 +543,11 @@
 
 /* ===================== MOBILE ===================== */
 @media (max-width: 600px) {
+
+  nav {
+    margin-left: 120px;
+  }
+
   /* ===== HEADER ===== */
   .logo {
     width: 120px;
