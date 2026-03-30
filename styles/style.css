@@ -80,6 +80,8 @@ nav ul li a:hover {
   display: flex;
   align-items: center;
   gap: 6px;
+  font-size: 20px;
+  font-weight: 600;
 }
 
 .arrow {
@@ -123,8 +125,8 @@ nav ul li a:hover {
 }
 
 .selected-produc p {
-  font-weight: 700;
-  font-size: 17px;
+  font-weight: 600;
+  font-size: 20px;
 }
 
 .selected-produc {
